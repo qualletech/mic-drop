@@ -1,0 +1,65 @@
+{
+  "extends": ["prisma", "plugin:@typescript-eslint/recommended", "airbnb", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module"
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "prettier"],
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "no-console": "off",
+    "semi": "off",
+    "max-len": [
+      "error",
+      {
+        "code": 120
+      }
+    ],
+    "import/order": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": [
+      "error",
+      {
+        "ignore": ["@/*"]
+      }
+    ],
+    "prefer-arrow/prefer-arrow-functions": "off",
+    "react/jsx-filename-extension": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/no-array-index-key": "off",
+    "react/require-default-props": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/prop-types": "off",
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/quotes": "off",
+    "@typescript-eslint/consistent-type-imports": "off",
+    "@typescript-eslint/no-unsafe-call": "off",
+    "@typescript-eslint/restrict-template-expressions": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "no-undef": "off",
+        "no-unused-vars": ["error", { "args": "none" }],
+        "no-use-before-define": "off"
+      }
+    }
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
+}
