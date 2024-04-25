@@ -11,6 +11,7 @@
   "author": "Qualle Tech",
   "license": "GPL-3.0-or-later",
   "dependencies": {
+    "@prisma/client": "^5.13.0",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "eslint-config-prettier": "^9.1.0",

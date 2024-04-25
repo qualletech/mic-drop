@@ -1,0 +1,90 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Venue {
+  id                        String   @id @unique @default(cuid())
+  createdAt                 DateTime @default(now())
+  updatedAt                 DateTime @updatedAt
+  name                      String   @unique
+  entry_accessible          Boolean  @default(false)
+  stage_accessible          Boolean  @default(false)
+  alcohol_free              Boolean  @default(false)
+  street_address            String
+  street_address_additional String
+  city                      String
+  state                     String
+  zip_code                  String
+  borough                   BOROUGH
+  Mic                       Mic[]    @relation
+}
+
+model Mic {
+  id               String     @id @unique @default(cuid())
+  createdAt        DateTime   @default(now())
+  updatedAt        DateTime   @updatedAt
+  name             String     @unique
+  sign_up          String
+  instagram_handle String?
+  website          String?
+  time_on_mic      Int
+  payment          String
+  venues           Venue[]    @relation
+  mic_times        Mic_Time[] @relation
+}
+
+model Mic_Time {
+  id        String   @id @unique @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  weekday   WEEKDAY
+  time      String
+  Mic       Mic?     @relation(fields: [micId], references: [id])
+  micId     String?
+}
+
+model Message {
+  id            String       @id @unique @default(cuid())
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+  type          MESSAGE_TYPE
+  email_address String
+  name          String
+  message_body  String
+}
+
+enum WEEKDAY {
+  monday
+  tuesday
+  wednesday
+  thursday
+  friday
+  saturday
+  sunday
+}
+
+enum BOROUGH {
+  manhattan
+  bronx
+  brooklyn
+  staten_island
+  queens
+}
+
+enum MESSAGE_TYPE {
+  change_request
+  new_submission
+  general
+  suggestion
+}
