@@ -12,7 +12,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="author" content="Qualle Tech" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body>{children}</body>
+      <body>
+        <header>
+          <img src="./logo.png" alt="mic drop logo" />
+        </header>
+        {children}
+        <footer>
+          <p>Copyright 2024 Qualle Tech</p>
+          <p>NYC's Open Mic Dashboard - Open Source Project</p>
+          <p>Contact</p>
+        </footer>
+      </body>
     </html>
   )
 }
