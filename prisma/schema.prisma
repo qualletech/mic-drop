@@ -18,11 +18,11 @@ model Venue {
   createdAt                 DateTime @default(now())
   updatedAt                 DateTime @updatedAt
   name                      String   @unique
-  entry_accessible          Boolean  @default(false)
-  stage_accessible          Boolean  @default(false)
-  alcohol_free              Boolean  @default(false)
+  entry_accessible          Boolean? @default(false)
+  stage_accessible          Boolean? @default(false)
+  alcohol_free              Boolean? @default(false)
   street_address            String
-  street_address_additional String
+  street_address_additional String?
   city                      String
   state                     String
   zip_code                  String
@@ -31,27 +31,28 @@ model Venue {
 }
 
 model Mic {
-  id               String     @id @unique @default(cuid())
-  createdAt        DateTime   @default(now())
-  updatedAt        DateTime   @updatedAt
-  name             String     @unique
-  sign_up          String
-  instagram_handle String?
-  website          String?
-  time_on_mic      Int
-  payment          String
-  venueId          String
-  venue            Venue      @relation(fields: [venueId], references: [id])
-  mic_times        Mic_Time[] @relation
+  id        String     @id @unique @default(cuid())
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  name      String     @unique
+  sign_up   String?
+  instagram String?
+  website   String?
+  set_time  Int?
+  payment   String?
+  venueId   String
+  venue     Venue      @relation(fields: [venueId], references: [id])
+  mic_times Mic_Time[] @relation
 }
 
 model Mic_Time {
-  id        String   @id @unique @default(cuid())
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id        String     @id @unique @default(cuid())
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
   weekday   WEEKDAY
+  frequency FREQUENCY? @default(weekly)
   time      String
-  Mic       Mic?     @relation(fields: [micId], references: [id])
+  Mic       Mic?       @relation(fields: [micId], references: [id])
   micId     String?
 }
 
@@ -73,6 +74,14 @@ enum WEEKDAY {
   friday
   saturday
   sunday
+}
+
+enum FREQUENCY {
+  weekly
+  first
+  second
+  third
+  fourth
 }
 
 enum BOROUGH {

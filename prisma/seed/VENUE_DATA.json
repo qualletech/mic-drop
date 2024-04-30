@@ -1,0 +1,212 @@
+[
+  {
+    "id": "b8b0d147",
+    "name": "Alligator Lounge",
+    "street_address": "600 Metropolitan Ave",
+    "city": "Brooklyn",
+    "state": "NY",
+    "zip_code": "11211",
+    "borough": "brooklyn",
+    "entry_accessible": true,
+    "alcohol_free": true
+  },
+  {
+    "id": "fc700c55",
+    "name": "Black Cat LES",
+    "street_address": "172 Rivington St",
+    "city": "New York",
+    "state": "NY",
+    "zip_code": "10002",
+    "borough": "manhattan"
+  },
+  {
+    "id": "6d2f9589",
+    "name": "Branded Saloon",
+    "street_address": "603 Vanderbilt Ave",
+    "city": "Brooklyn",
+    "state": "NY",
+    "zip_code": "11238",
+    "borough": "brooklyn",
+    "entry_accessible": true
+  },
+  {
+    "id": "249e91d1",
+    "name": "Brooklyn Comedey Collective",
+    "street_address": "167 Graham Ave",
+    "street_address_additional": "@Eris",
+    "city": "Brooklyn",
+    "state": "NY",
+    "zip_code": "11206",
+    "borough": "brooklyn",
+    "entry_accessible": true
+  },
+  {
+    "id": "16521ede",
+    "name": "Crystal Lake",
+    "street_address": "647 Grand St",
+    "city": "Brooklyn",
+    "state": "NY",
+    "zip_code": "11211",
+    "borough": "brooklyn",
+    "entry_accessible": true
+  },
+  {
+    "id": "479d5151",
+    "name": "Eastville Comedy Club",
+    "street_address": "487 Atlantic Ave",
+    "city": "Brooklyn",
+    "state": "NY",
+    "zip_code": "11217",
+    "borough": "brooklyn"
+  },
+  {
+    "id": "e3d2d201",
+    "name": "Easy Lover",
+    "street_address": "790 Metropolitan Ave",
+    "city": "Brooklyn",
+    "state": "NY",
+    "zip_code": "11211",
+    "borough": "brooklyn",
+    "entry_accessible": true
+  },
+  {
+    "id": "6c175eea",
+    "name": "Fiction Cafe/Bar",
+    "street_address": "308 Hooper St",
+    "city": "Brooklyn",
+    "state": "NY",
+    "zip_code": "11211",
+    "borough": "brooklyn",
+    "entry_accessible": true
+  },
+  {
+    "id": "25f98f3e",
+    "name": "Footlight Presents",
+    "street_address": "552 Grandview Ave",
+    "city": "Queens",
+    "state": "NY",
+    "zip_code": "11385",
+    "borough": "queens"
+  },
+  {
+    "id": "66322736",
+    "name": "Freddy's Bar",
+    "street_address": "627 5th Ave",
+    "city": "Brooklyn",
+    "state": "NY",
+    "zip_code": "11215",
+    "borough": "brooklyn",
+    "entry_accessible": true
+  },
+  {
+    "id": "7877021b",
+    "name": "Grounded Cafe",
+    "street_address": "198 5th Ave",
+    "city": "Brooklyn",
+    "state": "NY",
+    "zip_code": "11217",
+    "borough": "brooklyn",
+    "entry_accessible": true,
+    "stage_accessible": true
+  },
+  {
+    "id": "e04a353b",
+    "name": "Halyards",
+    "street_address": "406 3rd Ave",
+    "city": "Brooklyn",
+    "state": "NY",
+    "zip_code": "11215",
+    "borough": "brooklyn",
+    "entry_accessible": true
+  },
+  {
+    "id": "a7d11747",
+    "name": "Harlem Nights",
+    "street_address": "2361 Adam Clayton Powell Jr Blvd",
+    "city": "New York",
+    "state": "NY",
+    "zip_code": "10030",
+    "borough": "manhattan",
+    "entry_accessible": true
+  },
+  {
+    "id": "8d6c3ce2",
+    "name": "Mood Ring",
+    "street_address": "1260 Myrtle Ave",
+    "city": "Brooklyn",
+    "state": "NY",
+    "zip_code": "11221",
+    "borough": "brooklyn"
+  },
+  {
+    "id": "21df7706",
+    "name": "Pete's Candy Store",
+    "street_address": "709 Lorimer St",
+    "city": "Brooklyn",
+    "state": "NY",
+    "zip_code": "11211",
+    "borough": "brooklyn",
+    "entry_accessible": true
+  },
+  {
+    "id": "e62a59df",
+    "name": "Pine Box Rock Shop",
+    "street_address": "12 Grattan St",
+    "city": "Brooklyn",
+    "state": "NY",
+    "zip_code": "11206",
+    "borough": "brooklyn",
+    "entry_accessible": true
+  },
+  {
+    "id": "1a389b53",
+    "name": "Secret Pour",
+    "street_address": "1114 Dekalb Ave",
+    "city": "Brooklyn",
+    "state": "NY",
+    "zip_code": "11221",
+    "borough": "brooklyn",
+    "entry_accessible": true
+  },
+  {
+    "id": "b4676936",
+    "name": "Stand Up NY",
+    "street_address": "236 W 78th St",
+    "city": "New York",
+    "state": "NY",
+    "zip_code": "10024",
+    "borough": "manhattan",
+    "entry_accessible": true
+  },
+  {
+    "id": "492dc04d",
+    "name": "The Cobra Club",
+    "street_address": "6 Wyckoff Ave",
+    "city": "Brooklyn",
+    "state": "NY",
+    "zip_code": "11237",
+    "borough": "brooklyn",
+    "entry_accessible": true
+  },
+  {
+    "id": "834d99f7",
+    "name": "The Hop Shop",
+    "street_address": "121 Columbia St",
+    "city": "Brooklyn",
+    "state": "NY",
+    "zip_code": "11231",
+    "borough": "brooklyn",
+    "entry_accessible": true
+  },
+  {
+    "id": "24ded3c0",
+    "name": "The Tiny Cupboard",
+    "street_address": "1717 Broadway",
+    "street_address_additional": "315",
+    "city": "Brooklyn",
+    "state": "NY",
+    "zip_code": "11207",
+    "borough": "brooklyn",
+    "entry_accessible": true
+  }
+]
