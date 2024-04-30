@@ -40,7 +40,8 @@ model Mic {
   website          String?
   time_on_mic      Int
   payment          String
-  venues           Venue[]    @relation
+  venueId          String
+  venue            Venue      @relation(fields: [venueId], references: [id])
   mic_times        Mic_Time[] @relation
 }
 
