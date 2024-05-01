@@ -2,8 +2,10 @@
   "extends": ["prisma", "plugin:@typescript-eslint/recommended", "airbnb", "prettier"],
   "parserOptions": {
     "ecmaVersion": 8,
-    "sourceType": "module"
+    "sourceType": "module",
+    "extraFileExtensions": [".css"]
   },
+  "ignorePatterns": ["globals.css"],
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint", "prettier"],
   "env": {

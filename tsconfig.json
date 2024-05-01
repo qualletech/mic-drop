@@ -22,6 +22,15 @@
       }
     ]
   },
-  "include": ["next.config.mjs", "next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next.config.mjs",
+    "tailwind.config.js",
+    "postcss.config.js",
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "app/globals.css"
+  ],
   "exclude": ["node_modules"]
 }
