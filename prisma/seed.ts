@@ -1,16 +1,26 @@
-import prismaClient from "./prismaClient"
-import MIC_DATA from "./seed/MIC_DATA.json"
-import MIC_TIME_DATA from "./seed/MIC_TIME_DATA.json"
-import VENUE_DATA from "./seed/VENUE_DATA.json"
-import { Mic_Time as micTime, Venue } from "@prisma/client"
+const { PrismaClient } = require("@prisma/client")
+const MIC_DATA = require("./seed/MIC_DATA.json")
+const MIC_TIME_DATA = require("./seed/MIC_TIME_DATA.json")
+const VENUE_DATA = require("./seed/VENUE_DATA.json")
 
-export default async function seed() {
-  const venues = [...VENUE_DATA]
-  await prismaClient.venue.createMany({ data: venues as Venue[] })
+const prismaClient = new PrismaClient()
 
-  const times = [...MIC_TIME_DATA]
-  await prismaClient.mic_Time.createMany({ data: times as micTime[] })
+async function seed(): Promise<void> {
+  try {
+    const venues = [...VENUE_DATA]
+    await prismaClient.venue.createMany({ data: venues })
 
-  const mics = [...MIC_DATA]
-  await prismaClient.mic.createMany({ data: mics })
+    const times = [...MIC_TIME_DATA]
+    await prismaClient.mic_Time.createMany({ data: times })
+
+    const mics = [...MIC_DATA]
+    await prismaClient.mic.createMany({ data: mics })
+  } catch (e) {
+    console.error(e)
+    process.exit(1)
+  } finally {
+    await prismaClient.$disconnect()
+  }
 }
+
+seed()
