@@ -7,8 +7,7 @@
     "state": "NY",
     "zip_code": "11211",
     "borough": "brooklyn",
-    "entry_accessible": true,
-    "alcohol_free": true
+    "entry_accessible": true
   },
   {
     "id": "fc700c55",
@@ -32,8 +31,7 @@
   {
     "id": "249e91d1",
     "name": "Brooklyn Comedey Collective",
-    "street_address": "167 Graham Ave",
-    "street_address_additional": "@Eris",
+    "street_address": "167 Graham Ave @Eris",
     "city": "Brooklyn",
     "state": "NY",
     "zip_code": "11206",
@@ -120,16 +118,6 @@
     "entry_accessible": true
   },
   {
-    "id": "a7d11747",
-    "name": "Harlem Nights",
-    "street_address": "2361 Adam Clayton Powell Jr Blvd",
-    "city": "New York",
-    "state": "NY",
-    "zip_code": "10030",
-    "borough": "manhattan",
-    "entry_accessible": true
-  },
-  {
     "id": "8d6c3ce2",
     "name": "Mood Ring",
     "street_address": "1260 Myrtle Ave",
@@ -175,8 +163,7 @@
     "city": "New York",
     "state": "NY",
     "zip_code": "10024",
-    "borough": "manhattan",
-    "entry_accessible": true
+    "borough": "manhattan"
   },
   {
     "id": "492dc04d",
@@ -201,11 +188,57 @@
   {
     "id": "24ded3c0",
     "name": "The Tiny Cupboard",
-    "street_address": "1717 Broadway",
-    "street_address_additional": "315",
+    "street_address": "10 Cooper St",
     "city": "Brooklyn",
     "state": "NY",
     "zip_code": "11207",
+    "borough": "brooklyn",
+    "entry_accessible": true
+  },
+  {
+    "id": "28d4ab5e",
+    "name": "Bushwick Public House",
+    "street_address": "1288 Myrtle Ave",
+    "city": "Brooklyn",
+    "state": "NY",
+    "zip_code": "11221",
+    "borough": "brooklyn",
+    "entry_accessible": true
+  },
+  {
+    "id": "1c336fdc",
+    "name": "Rodney's Comedy Club",
+    "street_address": "1118 1st Ave",
+    "city": "New York",
+    "state": "NY",
+    "zip_code": "10065",
+    "borough": "manhattan"
+  },
+  {
+    "id": "83f87e0a",
+    "name": "Logan's Run",
+    "street_address": "375a 5th Ave",
+    "city": "Brooklyn",
+    "state": "NY",
+    "zip_code": "11215",
+    "borough": "brooklyn"
+  },
+  {
+    "id": "e2ac695d",
+    "name": "Flop House Comedy Club",
+    "street_address": "362 Grand St",
+    "city": "Brooklyn",
+    "state": "NY",
+    "zip_code": "11211",
+    "borough": "brooklyn"
+  },
+  {
+    "id": "8937b38b",
+    "name": "Endless Life Brewery",
+    "street_address": "585 Franklin Ave",
+    "city": "Brooklyn",
+    "state": "NY",
+    "zip_code": "11238",
     "borough": "brooklyn",
     "entry_accessible": true
   }

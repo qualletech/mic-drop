@@ -1,100 +1,18 @@
 [
   {
-    "id": "5ecbd71b",
-    "weekday": "wednesday",
-    "time": "18:00:00"
+    "id": "34b5d809",
+    "weekday": "friday",
+    "time": "19:00:00"
   },
   {
-    "id": "df373082",
-    "weekday": "sunday",
-    "time": "19:30:00"
+    "id": "60f36d58",
+    "weekday": "friday",
+    "time": "22:00:00"
   },
   {
-    "id": "8b4d1075",
-    "weekday": "tuesday",
-    "time": "20:00:00"
-  },
-  {
-    "id": "5d9845be",
-    "weekday": "tuesday",
+    "id": "79ed5198",
+    "weekday": "friday",
     "time": "20:30:00"
-  },
-  {
-    "id": "e10f5bf8",
-    "weekday": "monday",
-    "frequency": "first",
-    "time": "19:00:00"
-  },
-  {
-    "id": "195207db",
-    "weekday": "monday",
-    "frequency": "third",
-    "time": "19:00:00"
-  },
-  {
-    "id": "4289ebe3",
-    "weekday": "monday",
-    "time": "20:00:00"
-  },
-  {
-    "id": "f8000b5b",
-    "weekday": "monday",
-    "time": "21:00:00"
-  },
-  {
-    "id": "97aed1d8",
-    "weekday": "tuesday",
-    "time": "21:00:00"
-  },
-  {
-    "id": "a1a195bf",
-    "weekday": "thursday",
-    "time": "18:00:00"
-  },
-  {
-    "id": "bef360c9",
-    "weekday": "thursday",
-    "time": "19:30:00"
-  },
-  {
-    "id": "ba949531",
-    "weekday": "wednesday",
-    "time": "19:30:00"
-  },
-  {
-    "id": "6ec42a53",
-    "weekday": "monday",
-    "time": "19:00:00"
-  },
-  {
-    "id": "949eab9e",
-    "weekday": "wednesday",
-    "frequency": "first",
-    "time": "19:00:00"
-  },
-  {
-    "id": "cfdc4025",
-    "weekday": "wednesday",
-    "frequency": "third",
-    "time": "19:00:00"
-  },
-  {
-    "id": "6d8d3e19",
-    "weekday": "wednesday",
-    "frequency": "second",
-    "time": "19:00:00"
-  },
-  {
-    "id": "25e87d02",
-    "weekday": "wednesday",
-    "frequency": "fourth",
-    "time": "19:00:00"
-  },
-  {
-    "id": "f799c7c0",
-    "weekday": "saturday",
-    "frequency": "second",
-    "time": "17:30:00"
   },
   {
     "id": "8d672d08",
@@ -102,43 +20,55 @@
     "time": "18:30:00"
   },
   {
+    "id": "cbd979d9",
+    "weekday": "friday",
+    "time": "17:30:00"
+  },
+  {
+    "id": "1c01aa98",
+    "weekday": "monday",
+    "time": "19:30:00"
+  },
+  {
+    "id": "1f7954d1",
+    "weekday": "monday",
+    "time": "20:00:00"
+  },
+  {
     "id": "31f8349c",
     "weekday": "monday",
     "time": "21:00:00"
   },
   {
-    "id": "660d75c8",
+    "id": "54e8efba",
     "weekday": "monday",
-    "time": "20:00:00"
-  },
-  {
-    "id": "a8312812",
-    "weekday": "tuesday",
+    "frequency": "fourth",
     "time": "19:00:00"
   },
   {
-    "id": "aa9bb680",
-    "weekday": "thursday",
-    "time": "17:00:00"
-  },
-  {
-    "id": "890ff874",
-    "weekday": "saturday",
-    "time": "15:30:00"
-  },
-  {
-    "id": "ead2efd2",
+    "id": "5a14c129",
     "weekday": "monday",
-    "time": "18:00:00"
+    "time": "19:00:00"
   },
   {
-    "id": "3f268dc1",
-    "weekday": "friday",
-    "time": "18:00:00"
+    "id": "6dcf36df",
+    "weekday": "monday",
+    "time": "17:30:00"
   },
   {
-    "id": "2e3de254",
-    "weekday": "thursday",
+    "id": "6df5a841",
+    "weekday": "monday",
+    "time": "22:00:00"
+  },
+  {
+    "id": "6ec42a53",
+    "weekday": "monday",
+    "time": "19:00:00"
+  },
+  {
+    "id": "84380f4d",
+    "weekday": "monday",
+    "frequency": "second",
     "time": "19:00:00"
   },
   {
@@ -147,134 +77,44 @@
     "time": "18:00:00"
   },
   {
-    "id": "1bed1db5",
-    "weekday": "sunday",
-    "time": "17:00:00"
-  },
-  {
-    "id": "5745e3d7",
-    "weekday": "thursday",
-    "time": "17:30:00"
-  },
-  {
-    "id": "ba806462",
-    "weekday": "monday",
-    "time": "20:15:00"
-  },
-  {
-    "id": "3796dfb7",
-    "weekday": "monday",
-    "time": "19:00:00"
-  },
-  {
-    "id": "9544a1a8",
-    "weekday": "friday",
-    "time": "17:30:00"
-  },
-  {
-    "id": "07b45028",
-    "weekday": "monday",
-    "time": "17:30:00"
-  },
-  {
-    "id": "23b6b764",
-    "weekday": "monday",
-    "time": "19:30:00"
-  },
-  {
-    "id": "1f07357c",
+    "id": "b08672c6",
     "weekday": "monday",
     "time": "20:30:00"
   },
   {
-    "id": "53c3dc15",
+    "id": "ead2efd2",
     "weekday": "monday",
-    "time": "22:00:00"
+    "time": "18:00:00"
   },
   {
-    "id": "a80e77c3",
-    "weekday": "tuesday",
-    "time": "17:30:00"
+    "id": "f8000b5b",
+    "weekday": "monday",
+    "time": "21:00:00"
   },
   {
-    "id": "2ad8233b",
-    "weekday": "tuesday",
+    "id": "fc319ce9",
+    "weekday": "monday",
+    "time": "16:00:00"
+  },
+  {
+    "id": "49ff7b6b",
+    "weekday": "saturday",
     "time": "19:00:00"
   },
   {
-    "id": "8c089613",
-    "weekday": "tuesday",
-    "time": "20:30:00"
+    "id": "7381c6e4",
+    "weekday": "saturday",
+    "time": "16:00:00"
   },
   {
-    "id": "53fcc36e",
-    "weekday": "tuesday",
-    "time": "22:00:00"
-  },
-  {
-    "id": "422a7622",
-    "weekday": "wednesday",
-    "time": "17:30:00"
-  },
-  {
-    "id": "acb1d970",
-    "weekday": "wednesday",
-    "time": "19:00:00"
-  },
-  {
-    "id": "687fa228",
-    "weekday": "wednesday",
-    "time": "20:30:00"
-  },
-  {
-    "id": "c011060b",
-    "weekday": "wednesday",
-    "time": "22:00:00"
-  },
-  {
-    "id": "be2026a5",
-    "weekday": "thursday",
-    "time": "17:30:00"
-  },
-  {
-    "id": "64aac171",
-    "weekday": "thursday",
-    "time": "19:00:00"
-  },
-  {
-    "id": "8b3e2b1b",
-    "weekday": "thursday",
-    "time": "20:30:00"
-  },
-  {
-    "id": "db3930e1",
-    "weekday": "thursday",
-    "time": "22:00:00"
-  },
-  {
-    "id": "54a0610d",
-    "weekday": "friday",
-    "time": "17:00:00"
-  },
-  {
-    "id": "2de43cd4",
-    "weekday": "friday",
-    "time": "18:30:00"
-  },
-  {
-    "id": "b7655337",
-    "weekday": "friday",
-    "time": "22:00:00"
-  },
-  {
-    "id": "2d32cce7",
+    "id": "871ace0f",
     "weekday": "saturday",
     "time": "17:30:00"
   },
   {
-    "id": "3ceca933",
+    "id": "e4d5855f",
     "weekday": "saturday",
-    "time": "19:00:00"
+    "time": "22:00:00"
   },
   {
     "id": "fafdbea0",
@@ -282,9 +122,14 @@
     "time": "20:30:00"
   },
   {
-    "id": "e4d5855f",
-    "weekday": "saturday",
-    "time": "22:00:00"
+    "id": "08a0947b",
+    "weekday": "sunday",
+    "time": "20:30:00"
+  },
+  {
+    "id": "55cab3e6",
+    "weekday": "sunday",
+    "time": "16:00:00"
   },
   {
     "id": "7f0dfc7f",
@@ -294,11 +139,201 @@
   {
     "id": "b23e3673",
     "weekday": "sunday",
+    "time": "19:00:00"
+  },
+  {
+    "id": "2e3de254",
+    "weekday": "thursday",
+    "time": "19:00:00"
+  },
+  {
+    "id": "47a0249d",
+    "weekday": "thursday",
+    "time": "16:00:00"
+  },
+  {
+    "id": "508f8f1f",
+    "weekday": "thursday",
+    "time": "17:30:00"
+  },
+  {
+    "id": "6b9b7fdb",
+    "weekday": "thursday",
+    "time": "22:00:00"
+  },
+  {
+    "id": "a0670ec6",
+    "weekday": "thursday",
+    "time": "19:00:00"
+  },
+  {
+    "id": "a1a195bf",
+    "weekday": "thursday",
+    "time": "18:00:00"
+  },
+  {
+    "id": "a5d98fb4",
+    "weekday": "thursday",
+    "frequency": "third",
+    "time": "20:00:00"
+  },
+  {
+    "id": "b247f600",
+    "weekday": "thursday",
     "time": "20:30:00"
   },
   {
-    "id": "08a0947b",
-    "weekday": "sunday",
+    "id": "d1bf583c",
+    "weekday": "thursday",
+    "time": "19:00:00"
+  },
+  {
+    "id": "e398224f",
+    "weekday": "thursday",
+    "frequency": "first",
+    "time": "20:00:00"
+  },
+  {
+    "id": "0a41b2fb",
+    "weekday": "tuesday",
     "time": "22:00:00"
+  },
+  {
+    "id": "0bc52321",
+    "weekday": "tuesday",
+    "time": "20:30:00"
+  },
+  {
+    "id": "2656ad2b",
+    "weekday": "tuesday",
+    "frequency": "fourth",
+    "time": "19:00:00"
+  },
+  {
+    "id": "3fb1ff5d",
+    "weekday": "tuesday",
+    "time": "19:00:00"
+  },
+  {
+    "id": "4c57be2b",
+    "weekday": "tuesday",
+    "time": "18:00:00"
+  },
+  {
+    "id": "5d9845be",
+    "weekday": "tuesday",
+    "time": "20:30:00"
+  },
+  {
+    "id": "8b4d1075",
+    "weekday": "tuesday",
+    "time": "20:00:00"
+  },
+  {
+    "id": "9b98d1dc",
+    "weekday": "tuesday",
+    "time": "17:30:00"
+  },
+  {
+    "id": "9f08c5de",
+    "weekday": "tuesday",
+    "time": "19:30:00"
+  },
+  {
+    "id": "a0bc5395",
+    "weekday": "tuesday",
+    "time": "19:00:00"
+  },
+  {
+    "id": "a8312812",
+    "weekday": "tuesday",
+    "frequency": "second",
+    "time": "19:00:00"
+  },
+  {
+    "id": "d747a4af",
+    "weekday": "tuesday",
+    "time": "18:30:00"
+  },
+  {
+    "id": "f7835f23",
+    "weekday": "tuesday",
+    "time": "18:00:00"
+  },
+  {
+    "id": "16079792",
+    "weekday": "wednesday",
+    "frequency": "first",
+    "time": "20:00:00"
+  },
+  {
+    "id": "25e87d02",
+    "weekday": "wednesday",
+    "frequency": "fourth",
+    "time": "19:00:00"
+  },
+  {
+    "id": "58617dbb",
+    "weekday": "wednesday",
+    "time": "19:00:00"
+  },
+  {
+    "id": "6d8d3e19",
+    "weekday": "wednesday",
+    "frequency": "second",
+    "time": "19:00:00"
+  },
+  {
+    "id": "8e987221",
+    "weekday": "wednesday",
+    "frequency": "third",
+    "time": "20:00:00"
+  },
+  {
+    "id": "937c0110",
+    "weekday": "wednesday",
+    "time": "20:30:00"
+  },
+  {
+    "id": "949eab9e",
+    "weekday": "wednesday",
+    "frequency": "first",
+    "time": "19:00:00"
+  },
+  {
+    "id": "976cd612",
+    "weekday": "wednesday",
+    "time": "22:00:00"
+  },
+  {
+    "id": "976e3b7d",
+    "weekday": "wednesday",
+    "time": "16:00:00"
+  },
+  {
+    "id": "cfdc4025",
+    "weekday": "wednesday",
+    "frequency": "third",
+    "time": "19:00:00"
+  },
+  {
+    "id": "dbe4dea3",
+    "weekday": "wednesday",
+    "time": "17:30:00"
+  },
+  {
+    "id": "f6d4d720",
+    "weekday": "wednesday",
+    "time": "18:00:00"
+  },
+  {
+    "id": "f75f1832",
+    "weekday": "wednesday",
+    "time": "17:30:00"
+  },
+  {
+    "id": "f8569d7e",
+    "weekday": "wednesday",
+    "time": "18:30:00"
   }
 ]

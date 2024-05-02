@@ -1,1 +1,492 @@
-[{}, {}]
+[
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["fafdbea0", "fc319ce9"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "in person"
+  },
+  {
+    "name": "Fountain of Youth",
+    "mic_times": ["f8569d7e"],
+    "venueId": "8937b38b",
+    "instagram": "https://www.instagram.com/fountainofyouthmic/",
+    "set_time": 3,
+    "payment": "free",
+    "sign_up": "in person"
+  },
+  {
+    "name": "Efficiency",
+    "mic_times": ["f8000b5b"],
+    "venueId": "e3d2d201",
+    "instagram": "https://www.instagram.com/bigefficiency/",
+    "sign_up": "in person"
+  },
+  {
+    "name": "Tammany Hall",
+    "mic_times": ["f7835f23"],
+    "venueId": "e04a353b",
+    "instagram": "https://www.instagram.com/tammanyhallmic/",
+    "sign_up": "bucket"
+  },
+  {
+    "name": "Teacher's Lounge",
+    "mic_times": ["f75f1832"],
+    "venueId": "e04a353b",
+    "instagram": "https://www.instagram.com/teachersloungemic/",
+    "set_time": 4,
+    "sign_up": "bucket"
+  },
+  {
+    "name": "Wizman",
+    "mic_times": ["f6d4d720"],
+    "venueId": "b8b0d147",
+    "instagram": "https://www.instagram.com/wizman.comedy/",
+    "payment": "purchase minimum: 1 item",
+    "sign_up": "bucket"
+  },
+  {
+    "name": "Pillow Fight",
+    "mic_times": ["ead2efd2"],
+    "venueId": "e62a59df",
+    "instagram": "https://www.instagram.com/pillowfightmic/",
+    "sign_up": "bucket"
+  },
+  {
+    "name": "Pregame",
+    "mic_times": ["e4d5855f"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/pregame_mic/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "set_time": 5,
+    "payment": "$2",
+    "sign_up": "in person"
+  },
+  {
+    "name": "Fran Open Mic",
+    "mic_times": ["e398224f", "a5d98fb4"],
+    "venueId": "e3d2d201",
+    "instagram": "https://www.instagram.com/franopenmic/",
+    "sign_up": "bucket"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["dbe4dea3"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "in person"
+  },
+  {
+    "name": "The Great Antidepressant",
+    "mic_times": ["d747a4af"],
+    "venueId": "e2ac695d",
+    "instagram": "https://www.instagram.com/antidepressantmic/",
+    "payment": "free",
+    "sign_up": "bucket"
+  },
+  {
+    "name": "The Manhattan Mic",
+    "mic_times": ["d1bf583c"],
+    "venueId": "6c175eea",
+    "instagram": "https://www.instagram.com/themanhattanmic/",
+    "payment": "purchase minimum: 1 item",
+    "sign_up": "bucket"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["cbd979d9"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "in person"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["b247f600"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "in person"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["b23e3673"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "in person"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["b08672c6"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "in person"
+  },
+  {
+    "name": "Is This Gay?",
+    "mic_times": ["a8312812", "2656ad2b"],
+    "venueId": "8d6c3ce2",
+    "instagram": "https://www.instagram.com/isthisgaymic/"
+  },
+  {
+    "name": "Backyard Baseball Mic",
+    "mic_times": ["a1a195bf"],
+    "venueId": "e3d2d201",
+    "instagram": "https://www.instagram.com/backyardbbmic/",
+    "payment": "purchase minimum: 1 item",
+    "sign_up": "bucket"
+  },
+  {
+    "name": "Best Night Ever",
+    "mic_times": ["a0bc5395"],
+    "venueId": "6c175eea",
+    "instagram": "https://www.instagram.com/bestnightevercomedy/",
+    "set_time": 4,
+    "payment": "purchase minimum: 1 item",
+    "sign_up": "in person"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["a0670ec6"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "in person"
+  },
+  {
+    "name": "Filthy Casuals",
+    "mic_times": ["9f08c5de"],
+    "venueId": "83f87e0a",
+    "instagram": "https://www.instagram.com/filthycasuals_comedy/",
+    "set_time": 4,
+    "payment": "purchase minimum: 1 item",
+    "sign_up": "bucket"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["9b98d1dc"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "in person"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["976e3b7d"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "in person"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["976cd612"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "in person"
+  },
+  {
+    "name": "Good Skunk",
+    "mic_times": ["961ac49a"],
+    "venueId": "1a389b53",
+    "instagram": "https://www.instagram.com/goodskunkcomedy/",
+    "set_time": 4,
+    "payment": "google form available in ig bio"
+  },
+  {
+    "name": "The Non-threatening Mic",
+    "mic_times": ["949eab9e", "cfdc4025"],
+    "venueId": "66322736",
+    "instagram": "https://www.instagram.com/freddysbrklyn/",
+    "website": "https://www.freddysbar.com/events"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["937c0110"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "in person"
+  },
+  {
+    "name": "Friday Mic",
+    "mic_times": ["8d672d08"],
+    "venueId": "e04a353b",
+    "instagram": "https://www.instagram.com/friday_mic/",
+    "set_time": 4,
+    "payment": "purchase minimum: 1 item",
+    "sign_up": "google form available in ig bio starting Wednesday"
+  },
+  {
+    "name": "Branded Saloon Open Mic",
+    "mic_times": ["8b4d1075"],
+    "venueId": "6d2f9589",
+    "instagram": "https://www.instagram.com/brandedsaloon/",
+    "website": "https://www.brandedsaloon.com/"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["871ace0f"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "in person"
+  },
+  {
+    "name": "Rush Hour",
+    "mic_times": ["84380f4d", "54e8efba"],
+    "venueId": "e3d2d201",
+    "instagram": "https://www.instagram.com/rushhourmic/",
+    "sign_up": "in person"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["7f0dfc7f"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "in person"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["79ed5198"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "in person"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["7381c6e4"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "in person"
+  },
+  {
+    "name": "The Fun Mic",
+    "mic_times": ["6ec42a53"],
+    "venueId": "66322736",
+    "instagram": "https://www.instagram.com/freddysbrklyn/",
+    "website": "https://www.freddysbar.com/events"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["6df5a841"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "in person"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["6dcf36df"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "in person"
+  },
+  {
+    "name": "Asif's Comedy Open Mic",
+    "mic_times": ["6d8d3e19", "25e87d02"],
+    "venueId": "66322736",
+    "instagram": "https://www.instagram.com/freddysbrklyn/",
+    "website": "https://www.freddysbar.com/events"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["6b9b7fdb"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "in person"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["60f36d58"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "dm @quadir_yusuf on ig"
+  },
+  {
+    "name": "BCC OPEN ASS MIC",
+    "mic_times": ["5d9845be"],
+    "venueId": "249e91d1",
+    "instagram": "https://www.instagram.com/comedybrooklyn/",
+    "website": "https://www.brooklyncc.com/show-schedule/assopenmic-4-30",
+    "set_time": 3,
+    "payment": "free",
+    "sign_up": "in person 15 minutes before show (first come first serve)"
+  },
+  {
+    "name": "2 Girls 1 Cupboard",
+    "mic_times": ["5a14c129"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/twogirls_onecupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "in person"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["58617dbb"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "in person"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["55cab3e6"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "in person"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["508f8f1f"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "in person"
+  },
+  {
+    "name": "We Wear Pink",
+    "mic_times": ["4c57be2b"],
+    "venueId": "1c336fdc",
+    "instagram": "https://www.instagram.com/wewearpinkcomedy/",
+    "payment": "purchase minimum: 1 item",
+    "sign_up": "google form available in ig bio"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["49ff7b6b"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "in person"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["47a0249d"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "in person"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["3fb1ff5d"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "in person"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["34b5d809"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "dm @mika_mocha on ig"
+  },
+  {
+    "name": "Harlem Nights Open Mic",
+    "mic_times": ["31f8349c"],
+    "venueId": "a7d11747",
+    "instagram": "https://www.instagram.com/harlemnightsopenmic/",
+    "website": "http://www.harlemnights.nyc/",
+    "sign_up": "in person half 30 minutes before show"
+  },
+  {
+    "name": "Too Many Hosts",
+    "mic_times": ["2e3de254"],
+    "venueId": "1a389b53",
+    "instagram": "https://www.instagram.com/toomanyhosts/",
+    "website": "https://secretpour.com/events",
+    "set_time": 3,
+    "sign_up": "in person 30 minutes before show"
+  },
+  {
+    "name": "Hey you get over here already",
+    "mic_times": ["1f7954d1"],
+    "venueId": "16521ede",
+    "instagram": "https://www.instagram.com/heyyougetoverherealready/",
+    "sign_up": "bucket"
+  },
+  {
+    "name": "Yard Sale",
+    "mic_times": ["1c01aa98"],
+    "venueId": "28d4ab5e",
+    "instagram": "https://www.instagram.com/yardsale_comedy/",
+    "sign_up": "bucket"
+  },
+  {
+    "name": "The Simple Mic",
+    "mic_times": ["16079792", "8e987221"],
+    "venueId": "492dc04d",
+    "instagram": "https://www.instagram.com/thesimplemic/",
+    "payment": "purchase minimum: 1 item",
+    "sign_up": "bucket"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["0bc52321"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "in person"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["0a41b2fb"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "dm @spaandaa on ig"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": ["08a0947b"],
+    "venueId": "24ded3c0",
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "in person"
+  }
+]
