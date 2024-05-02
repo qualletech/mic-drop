@@ -14,7 +14,7 @@ async function seed(): Promise<void> {
     await prismaClient.mic_Time.createMany({ data: times })
 
     const mics = [...MIC_DATA]
-    await prismaClient.mic.createMany({ data: mics })
+    await Promise.all(mics.map(async (m) => await prismaClient.mic.create({ data: m })))
   } catch (e) {
     console.error(e)
     process.exit(1)
