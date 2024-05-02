@@ -20,9 +20,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           rel="stylesheet"
         />
       </head>
-      <body>
+      <body className="bg-light p-6">
         <header>
-          <img src="./logo.png" alt="mic drop logo" />
+          <img src="./logo.png" alt="mic drop logo" className="aspect-auto w-full sm:w-1/5" />
         </header>
         {children}
         <footer>
