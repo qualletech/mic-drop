@@ -14,9 +14,13 @@ async function seed(): Promise<void> {
     const times = [...MIC_TIME_DATA]
     const mics = [...MIC_DATA]
 
-    await prismaClient.venue.createMany({ data: venues })
-    await prismaClient.mic_Time.createMany({ data: times })
-    await Promise.all(mics.map((m) => prismaClient.mic.create({ data: m })))
+    await prismaClient.$transaction(async (batch) => {
+      await batch.venue.createMany({ data: venues })
+      await batch.mic_Time.createMany({ data: times })
+      await Promise.all(mics.map((m) => batch.mic.create({ data: m })))
+    })
+
+    console.log("✨ Database seeded successfully ✨")
   } catch (e) {
     console.log(e.message)
     process.exit(1)
