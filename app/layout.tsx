@@ -1,6 +1,10 @@
+"use client"
+
 import "./globals.css"
+import { useRouter } from "next/navigation"
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const router = useRouter()
   return (
     <html lang="en">
       <head>
@@ -22,13 +26,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="bg-light p-6">
         <header>
-          <img src="./logo.png" alt="mic drop logo" className="aspect-auto w-full sm:w-1/5" />
+          <button type="button" onClick={() => router.push("/")}>
+            <img src="./logo.png" alt="mic drop logo" className="aspect-auto w-full sm:w-1/5" />
+          </button>
+          <button type="button" onClick={() => router.push("/contact")}>
+            ?
+          </button>
         </header>
         {children}
         <footer>
           <p>Copyright 2024 Qualle Tech</p>
           <p>NYC's Open Mic Dashboard - Open Source Project</p>
-          <p>Contact</p>
+          <button type="button" onClick={() => router.push("/contact")}>
+            Contact
+          </button>
         </footer>
       </body>
     </html>
