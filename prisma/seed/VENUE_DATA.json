@@ -241,5 +241,15 @@
     "zip_code": "11238",
     "borough": "brooklyn",
     "entry_accessible": true
+  },
+  {
+    "id": "a7d11747",
+    "name": "Harlem Nights",
+    "street_address": "2361 Adam Clayton Powell Jr Blvd",
+    "city": "New York",
+    "state": "NY",
+    "zip_code": "10030",
+    "borough": "manhattan",
+    "entry_accessible": true
   }
 ]
