@@ -1,10 +1,10 @@
-"use client"
+/* eslint-disable max-len */
 
 import "./globals.css"
-import { useRouter } from "next/navigation"
+import Footer from "@/components/Footer"
+import Header from "@/components/Header"
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const router = useRouter()
   return (
     <html lang="en">
       <head>
@@ -24,23 +24,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           rel="stylesheet"
         />
       </head>
-      <body className="bg-light p-6">
-        <header>
-          <button type="button" onClick={() => router.push("/")}>
-            <img src="./logo.png" alt="mic drop logo" className="aspect-auto w-full sm:w-1/5" />
-          </button>
-          <button type="button" onClick={() => router.push("/contact")}>
-            ?
-          </button>
-        </header>
-        {children}
-        <footer>
-          <p>Copyright 2024 Qualle Tech</p>
-          <p>NYC's Open Mic Dashboard - Open Source Project</p>
-          <button type="button" onClick={() => router.push("/contact")}>
-            Contact
-          </button>
-        </footer>
+      <body className="bg-light h-dvh grid grid-rows-[auto_1fr_auto]">
+        <Header />
+        <main className="h-full p-6">{children}</main>
+        <Footer />
       </body>
     </html>
   )
