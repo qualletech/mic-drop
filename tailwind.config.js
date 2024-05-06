@@ -13,6 +13,7 @@ module.exports = {
       xl: "1440px",
     },
     colors: {
+      white: "#FFFFFF",
       light: "#FEEBD7",
       yellow: "#FEBC77",
       orange: "#FB462C",
