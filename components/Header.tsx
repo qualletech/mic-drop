@@ -9,7 +9,11 @@ export default function Header() {
   return (
     <nav className="bg-white/50 shadow">
       <div className="flex flex-wrap items-center justify-between mx-auto p-6">
-        <button type="button" onClick={() => router.push("/")}>
+        <button
+          type="button"
+          onClick={() => router.push("/")}
+          className="rounded-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red"
+        >
           <img src="./logo.png" alt="mic drop logo" className="aspect-auto w-52" />
         </button>
         <button
