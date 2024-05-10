@@ -10,13 +10,13 @@ export default function Header() {
         <button
           type="button"
           onClick={() => router.push("/")}
-          className="rounded-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red"
+          className="rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red"
         >
           <img src="./logo.png" alt="mic drop logo" className="aspect-auto w-52" />
         </button>
         <button
           type="button"
-          className="rounded-md border-2 border-red bg-light px-3.5 py-2.5 text-md font-bold text-red shadow-sm hover:bg-light/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red"
+          className="rounded-lg border-2 border-red bg-light px-3.5 py-2.5 text-md font-bold text-red shadow-sm hover:bg-light/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red"
           onClick={() => router.push("/contact")}
         >
           ?
