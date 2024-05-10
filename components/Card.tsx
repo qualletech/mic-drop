@@ -1,5 +1,3 @@
-/* eslint-disable max-len */
-
 import moment from "moment"
 
 export default function Card({ mic }) {
