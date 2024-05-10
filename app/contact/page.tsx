@@ -1,33 +1,64 @@
 export default function Page() {
   return (
-    <>
-      <h1>Contact Us</h1>
-      <form>
-        <label>
-          Request Type
-          <select defaultValue="general">
-            <option value="general">General Question</option>
-            <option value="new">New Mic Submission</option>
-            <option value="edit">Edit Mic Details</option>
-            <option value="suggest">Suggestions for Mic Drop</option>
-          </select>
-        </label>
-        <label>
-          Name
-          <input type="text" />
-        </label>
-        <label>
-          Email <input type="text" />
-        </label>
-        <label>
-          Request
-          <textarea />
-          {/* add option of if it's an edit mic value specifying mic name (maybe drop down?)
-          add option of if new the request becomes notes and we'll have everything combined into one  */}
-        </label>
-        <button type="submit">Submit</button>
-        <p>Cancel</p>
+    <div className="grid gap-5 grid-rows-[auto_minmax(0,1fr)] overflow-auto px-12 py-6">
+      <h1 className="text-4xl font-extrabold">Contact Us</h1>
+      <form className="grid gap-20 md:grid-cols-[1fr_auto] ">
+        <div className="grid gap-4 content-start">
+          <label htmlFor="request-type" className="block mb-2 text-sm font-medium">
+            Request Type
+            <select
+              id="request-type"
+              className="border border-black/30 text-sm rounded-lg focus:ring-orange focus:border-orange block w-full p-2.5"
+            >
+              <option selected value="general">
+                General Question
+              </option>
+              <option value="new">New Mic Submission</option>
+              <option value="edit">Edit Mic Details</option>
+              <option value="suggest">Suggestions for Mic Drop</option>
+            </select>
+          </label>
+          <label htmlFor="name" className="block mb-2 text-sm font-medium">
+            Name
+            <input
+              placeholder="Your Name"
+              type="text"
+              id="name"
+              className="border border-black/30 text-sm rounded-lg focus:ring-orange focus:border-orange block w-full p-2.5"
+            />
+          </label>
+          <label htmlFor="email" className="block mb-2 text-sm font-medium">
+            Email
+            <input
+              type="text"
+              placeholder="yourname@email.com"
+              id="email"
+              className="border border-black/30 text-sm rounded-lg block w-full p-2.5"
+            />
+          </label>
+          <label htmlFor="request" className="block mb-2 text-sm font-medium">
+            Request
+            <textarea
+              id="request"
+              rows={5}
+              placeholder="Your information here"
+              className="border border-black/30 text-sm rounded-lg block w-full p-2.5 resize-y"
+            />
+          </label>
+          <div className="grid grid-flow-col justify-start items-center gap-6">
+            <button
+              type="submit"
+              className="rounded-lg bg-orange px-3.5 py-2.5 text-sm font-semibold text-light shadow-sm hover:bg-orange/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red"
+            >
+              Submit
+            </button>
+            <a href="/" className="text-sm font-semibold hover:underline">
+              Cancel
+            </a>
+          </div>
+        </div>
+        <img className="aspect-auto w-3/4 place-self-center md:block hidden" src="./mic-pic.png" alt="" />
       </form>
-    </>
+    </div>
   )
 }
