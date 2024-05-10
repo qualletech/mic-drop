@@ -22,9 +22,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           rel="stylesheet"
         />
       </head>
-      <body className="bg-light h-dvh grid grid-rows-[auto_1fr_auto]">
+      <body className="bg-light h-dvh grid md:grid-rows-[auto_minmax(0,1fr)_auto]">
         <Header />
-        <main className="h-full p-6">{children}</main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
