@@ -15,7 +15,7 @@ export default function Error() {
             Go back home
           </a>
           <a href="/contact" className="text-sm font-semibold">
-            Contact us <span aria-hidden="true">&rarr;</span>
+            Contact us
           </a>
         </div>
       </div>
