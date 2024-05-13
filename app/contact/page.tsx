@@ -1,9 +1,9 @@
 export default function Page() {
   return (
-    <div className="grid gap-5 grid-rows-[auto_minmax(0,1fr)] overflow-auto px-12 py-6">
-      <h1 className="text-4xl font-extrabold">Contact Us</h1>
-      <form className="grid gap-20 md:grid-cols-[1fr_auto] ">
-        <div className="grid gap-4 content-start">
+    <div className="grid md:grid-cols-[1fr_auto] max-h-full overflow-auto px-12 py-6">
+      <div className="grid content-start gap-5">
+        <h1 className="text-4xl font-extrabold">Contact Us</h1>
+        <form className="grid gap-2">
           <label htmlFor="request-type" className="block mb-2 text-sm font-medium">
             Request Type
             <select
@@ -56,9 +56,9 @@ export default function Page() {
               Cancel
             </a>
           </div>
-        </div>
-        <img className="aspect-auto w-3/4 place-self-center md:block hidden" src="./mic-pic.png" alt="" />
-      </form>
+        </form>
+      </div>
+      <img className="aspect-auto w-3/4 place-self-center md:block hidden" src="./mic-pic.png" alt="" />
     </div>
   )
 }
