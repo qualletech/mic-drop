@@ -8,7 +8,7 @@ export default function Page() {
             Request Type
             <select
               id="request-type"
-              className="border border-black/30 text-sm rounded-lg focus:ring-orange focus:border-orange block w-full p-2.5"
+              className="border border-black/30 text-sm rounded-lg focus:ring-2 focus:  ring-orange focus:outline-none  block w-full p-2.5"
             >
               <option selected value="general">
                 General Question
@@ -24,7 +24,7 @@ export default function Page() {
               placeholder="Your Name"
               type="text"
               id="name"
-              className="border border-black/30 text-sm rounded-lg focus:ring-orange focus:border-orange block w-full p-2.5"
+              className="border border-black/30 text-sm rounded-lg focus:ring-2 focus:  ring-orange focus:outline-none block w-full p-2.5"
             />
           </label>
           <label htmlFor="email" className="block mb-2 text-sm font-medium">
@@ -33,7 +33,7 @@ export default function Page() {
               type="text"
               placeholder="yourname@email.com"
               id="email"
-              className="border border-black/30 text-sm rounded-lg block w-full p-2.5"
+              className="border border-black/30 text-sm rounded-lg focus:ring-2 focus:  ring-orange focus:outline-none block w-full p-2.5"
             />
           </label>
           <label htmlFor="request" className="block mb-2 text-sm font-medium">
@@ -42,7 +42,7 @@ export default function Page() {
               id="request"
               rows={5}
               placeholder="Your information here"
-              className="border border-black/30 text-sm rounded-lg block w-full p-2.5 resize-y"
+              className="border border-black/30 text-sm rounded-lg focus:ring-2 focus:  ring-orange focus:outline-none block w-full p-2.5 resize-y"
             />
           </label>
           <div className="grid grid-flow-col justify-start items-center gap-6">
@@ -52,7 +52,10 @@ export default function Page() {
             >
               Submit
             </button>
-            <a href="/" className="text-sm font-semibold hover:underline">
+            <a
+              href="/"
+              className="text-sm font-semibold hover:underline rounded-lg focus-visible:outline focus-visible:outline-2 px-3.5 py-2.5 focus-visible:outline-offset-2 focus-visible:outline-red"
+            >
               Cancel
             </a>
           </div>
