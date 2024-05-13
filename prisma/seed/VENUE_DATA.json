@@ -251,5 +251,15 @@
     "zip_code": "10030",
     "borough": "manhattan",
     "entry_accessible": true
+  },
+  {
+    "id": "e6e0c207",
+    "name": "e's BAR",
+    "street_address": "511 Amsterdam Ave",
+    "city": "New York",
+    "state": "NY",
+    "zip_code": "10024",
+    "borough": "manhattan",
+    "entry_accessible": true
   }
 ]

@@ -326,5 +326,16 @@
     "website": "https://www.thetinycupboard.com/open-mic",
     "payment": "$2",
     "sign_up": "check website for details"
+  },
+  {
+    "name": "Comics Uncorked",
+    "mic_times": {
+      "connect": [{ "id": "a0902c65" }]
+    },
+    "venue": { "connect": { "id": "e6e0c207" } },
+    "instagram": "https://www.instagram.com/comics_uncorked/",
+    "website": "https://e-barnyc.com/uncorked/",
+    "payment": "purchase minimum: 2 items",
+    "sign_up": "form available in ig bio"
   }
 ]
