@@ -1,14 +1,5 @@
 [
   {
-    "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "fafdbea0" }, { "id": "fc319ce9" }] },
-    "venue": { "connect": { "id": "24ded3c0" } },
-    "instagram": "https://www.instagram.com/thetinycupboard/",
-    "website": "https://www.thetinycupboard.com/open-mic",
-    "payment": "$2",
-    "sign_up": "in person"
-  },
-  {
     "name": "Fountain of Youth",
     "mic_times": { "connect": [{ "id": "f8569d7e" }] },
     "venue": { "connect": { "id": "8937b38b" } },
@@ -71,15 +62,7 @@
     "instagram": "https://www.instagram.com/franopenmic/",
     "sign_up": "bucket"
   },
-  {
-    "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "dbe4dea3" }] },
-    "venue": { "connect": { "id": "24ded3c0" } },
-    "instagram": "https://www.instagram.com/thetinycupboard/",
-    "website": "https://www.thetinycupboard.com/open-mic",
-    "payment": "$2",
-    "sign_up": "in person"
-  },
+
   {
     "name": "The Great Antidepressant",
     "mic_times": { "connect": [{ "id": "d747a4af" }] },
@@ -96,42 +79,7 @@
     "payment": "purchase minimum: 1 item",
     "sign_up": "bucket"
   },
-  {
-    "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "cbd979d9" }] },
-    "venue": { "connect": { "id": "24ded3c0" } },
-    "instagram": "https://www.instagram.com/thetinycupboard/",
-    "website": "https://www.thetinycupboard.com/open-mic",
-    "payment": "$2",
-    "sign_up": "in person"
-  },
-  {
-    "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "b247f600" }] },
-    "venue": { "connect": { "id": "24ded3c0" } },
-    "instagram": "https://www.instagram.com/thetinycupboard/",
-    "website": "https://www.thetinycupboard.com/open-mic",
-    "payment": "$2",
-    "sign_up": "in person"
-  },
-  {
-    "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "b23e3673" }] },
-    "venue": { "connect": { "id": "24ded3c0" } },
-    "instagram": "https://www.instagram.com/thetinycupboard/",
-    "website": "https://www.thetinycupboard.com/open-mic",
-    "payment": "$2",
-    "sign_up": "in person"
-  },
-  {
-    "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "b08672c6" }] },
-    "venue": { "connect": { "id": "24ded3c0" } },
-    "instagram": "https://www.instagram.com/thetinycupboard/",
-    "website": "https://www.thetinycupboard.com/open-mic",
-    "payment": "$2",
-    "sign_up": "in person"
-  },
+
   {
     "name": "Is This Gay?",
     "mic_times": { "connect": [{ "id": "a8312812" }, { "id": "2656ad2b" }] },
@@ -155,15 +103,7 @@
     "payment": "purchase minimum: 1 item",
     "sign_up": "in person"
   },
-  {
-    "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "a0670ec6" }] },
-    "venue": { "connect": { "id": "24ded3c0" } },
-    "instagram": "https://www.instagram.com/thetinycupboard/",
-    "website": "https://www.thetinycupboard.com/open-mic",
-    "payment": "$2",
-    "sign_up": "in person"
-  },
+
   {
     "name": "Filthy Casuals",
     "mic_times": { "connect": [{ "id": "9f08c5de" }] },
@@ -173,33 +113,7 @@
     "payment": "purchase minimum: 1 item",
     "sign_up": "bucket"
   },
-  {
-    "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "9b98d1dc" }] },
-    "venue": { "connect": { "id": "24ded3c0" } },
-    "instagram": "https://www.instagram.com/thetinycupboard/",
-    "website": "https://www.thetinycupboard.com/open-mic",
-    "payment": "$2",
-    "sign_up": "in person"
-  },
-  {
-    "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "976e3b7d" }] },
-    "venue": { "connect": { "id": "24ded3c0" } },
-    "instagram": "https://www.instagram.com/thetinycupboard/",
-    "website": "https://www.thetinycupboard.com/open-mic",
-    "payment": "$2",
-    "sign_up": "in person"
-  },
-  {
-    "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "976cd612" }] },
-    "venue": { "connect": { "id": "24ded3c0" } },
-    "instagram": "https://www.instagram.com/thetinycupboard/",
-    "website": "https://www.thetinycupboard.com/open-mic",
-    "payment": "$2",
-    "sign_up": "in person"
-  },
+
   {
     "name": "Good Skunk",
     "mic_times": { "connect": [{ "id": "961ac49a" }] },
@@ -214,15 +128,6 @@
     "venue": { "connect": { "id": "66322736" } },
     "instagram": "https://www.instagram.com/freddysbrklyn/",
     "website": "https://www.freddysbar.com/events"
-  },
-  {
-    "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "937c0110" }] },
-    "venue": { "connect": { "id": "24ded3c0" } },
-    "instagram": "https://www.instagram.com/thetinycupboard/",
-    "website": "https://www.thetinycupboard.com/open-mic",
-    "payment": "$2",
-    "sign_up": "in person"
   },
   {
     "name": "Friday Mic",
@@ -240,15 +145,7 @@
     "instagram": "https://www.instagram.com/brandedsaloon/",
     "website": "https://www.brandedsaloon.com/"
   },
-  {
-    "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "871ace0f" }] },
-    "venue": { "connect": { "id": "24ded3c0" } },
-    "instagram": "https://www.instagram.com/thetinycupboard/",
-    "website": "https://www.thetinycupboard.com/open-mic",
-    "payment": "$2",
-    "sign_up": "in person"
-  },
+
   {
     "name": "Rush Hour",
     "mic_times": { "connect": [{ "id": "84380f4d" }, { "id": "54e8efba" }] },
@@ -256,33 +153,7 @@
     "instagram": "https://www.instagram.com/rushhourmic/",
     "sign_up": "in person"
   },
-  {
-    "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "7f0dfc7f" }] },
-    "venue": { "connect": { "id": "24ded3c0" } },
-    "instagram": "https://www.instagram.com/thetinycupboard/",
-    "website": "https://www.thetinycupboard.com/open-mic",
-    "payment": "$2",
-    "sign_up": "in person"
-  },
-  {
-    "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "79ed5198" }] },
-    "venue": { "connect": { "id": "24ded3c0" } },
-    "instagram": "https://www.instagram.com/thetinycupboard/",
-    "website": "https://www.thetinycupboard.com/open-mic",
-    "payment": "$2",
-    "sign_up": "in person"
-  },
-  {
-    "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "7381c6e4" }] },
-    "venue": { "connect": { "id": "24ded3c0" } },
-    "instagram": "https://www.instagram.com/thetinycupboard/",
-    "website": "https://www.thetinycupboard.com/open-mic",
-    "payment": "$2",
-    "sign_up": "in person"
-  },
+
   {
     "name": "The Fun Mic",
     "mic_times": { "connect": [{ "id": "6ec42a53" }] },
@@ -290,24 +161,7 @@
     "instagram": "https://www.instagram.com/freddysbrklyn/",
     "website": "https://www.freddysbar.com/events"
   },
-  {
-    "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "6df5a841" }] },
-    "venue": { "connect": { "id": "24ded3c0" } },
-    "instagram": "https://www.instagram.com/thetinycupboard/",
-    "website": "https://www.thetinycupboard.com/open-mic",
-    "payment": "$2",
-    "sign_up": "in person"
-  },
-  {
-    "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "6dcf36df" }] },
-    "venue": { "connect": { "id": "24ded3c0" } },
-    "instagram": "https://www.instagram.com/thetinycupboard/",
-    "website": "https://www.thetinycupboard.com/open-mic",
-    "payment": "$2",
-    "sign_up": "in person"
-  },
+
   {
     "name": "Asif's Comedy Open Mic",
     "mic_times": { "connect": [{ "id": "6d8d3e19" }, { "id": "25e87d02" }] },
@@ -315,24 +169,7 @@
     "instagram": "https://www.instagram.com/freddysbrklyn/",
     "website": "https://www.freddysbar.com/events"
   },
-  {
-    "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "6b9b7fdb" }] },
-    "venue": { "connect": { "id": "24ded3c0" } },
-    "instagram": "https://www.instagram.com/thetinycupboard/",
-    "website": "https://www.thetinycupboard.com/open-mic",
-    "payment": "$2",
-    "sign_up": "in person"
-  },
-  {
-    "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "60f36d58" }] },
-    "venue": { "connect": { "id": "24ded3c0" } },
-    "instagram": "https://www.instagram.com/thetinycupboard/",
-    "website": "https://www.thetinycupboard.com/open-mic",
-    "payment": "$2",
-    "sign_up": "dm @quadir_yusuf on ig"
-  },
+
   {
     "name": "BCC OPEN ASS MIC",
     "mic_times": { "connect": [{ "id": "5d9845be" }] },
@@ -352,33 +189,7 @@
     "payment": "$2",
     "sign_up": "in person"
   },
-  {
-    "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "58617dbb" }] },
-    "venue": { "connect": { "id": "24ded3c0" } },
-    "instagram": "https://www.instagram.com/thetinycupboard/",
-    "website": "https://www.thetinycupboard.com/open-mic",
-    "payment": "$2",
-    "sign_up": "in person"
-  },
-  {
-    "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "55cab3e6" }] },
-    "venue": { "connect": { "id": "24ded3c0" } },
-    "instagram": "https://www.instagram.com/thetinycupboard/",
-    "website": "https://www.thetinycupboard.com/open-mic",
-    "payment": "$2",
-    "sign_up": "in person"
-  },
-  {
-    "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "508f8f1f" }] },
-    "venue": { "connect": { "id": "24ded3c0" } },
-    "instagram": "https://www.instagram.com/thetinycupboard/",
-    "website": "https://www.thetinycupboard.com/open-mic",
-    "payment": "$2",
-    "sign_up": "in person"
-  },
+
   {
     "name": "We Wear Pink",
     "mic_times": { "connect": [{ "id": "4c57be2b" }] },
@@ -387,42 +198,7 @@
     "payment": "purchase minimum: 1 item",
     "sign_up": "google form available in ig bio"
   },
-  {
-    "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "49ff7b6b" }] },
-    "venue": { "connect": { "id": "24ded3c0" } },
-    "instagram": "https://www.instagram.com/thetinycupboard/",
-    "website": "https://www.thetinycupboard.com/open-mic",
-    "payment": "$2",
-    "sign_up": "in person"
-  },
-  {
-    "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "47a0249d" }] },
-    "venue": { "connect": { "id": "24ded3c0" } },
-    "instagram": "https://www.instagram.com/thetinycupboard/",
-    "website": "https://www.thetinycupboard.com/open-mic",
-    "payment": "$2",
-    "sign_up": "in person"
-  },
-  {
-    "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "3fb1ff5d" }] },
-    "venue": { "connect": { "id": "24ded3c0" } },
-    "instagram": "https://www.instagram.com/thetinycupboard/",
-    "website": "https://www.thetinycupboard.com/open-mic",
-    "payment": "$2",
-    "sign_up": "in person"
-  },
-  {
-    "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "34b5d809" }] },
-    "venue": { "connect": { "id": "24ded3c0" } },
-    "instagram": "https://www.instagram.com/thetinycupboard/",
-    "website": "https://www.thetinycupboard.com/open-mic",
-    "payment": "$2",
-    "sign_up": "dm @mika_mocha on ig"
-  },
+
   {
     "name": "Harlem Nights Open Mic",
     "mic_times": { "connect": [{ "id": "31f8349c" }] },
@@ -464,29 +240,91 @@
   },
   {
     "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "0bc52321" }] },
+    "mic_times": {
+      "connect": [{ "id": "fc319ce9" }, { "id": "6dcf36df" }, { "id": "b08672c6" }, { "id": "6df5a841" }]
+    },
     "venue": { "connect": { "id": "24ded3c0" } },
     "instagram": "https://www.instagram.com/thetinycupboard/",
     "website": "https://www.thetinycupboard.com/open-mic",
     "payment": "$2",
-    "sign_up": "in person"
+    "sign_up": "check website for details"
   },
   {
     "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "0a41b2fb" }] },
+    "mic_times": {
+      "connect": [{ "id": "9b98d1dc" }, { "id": "3fb1ff5d" }, { "id": "0bc52321" }, { "id": "0a41b2fb" }]
+    },
     "venue": { "connect": { "id": "24ded3c0" } },
     "instagram": "https://www.instagram.com/thetinycupboard/",
     "website": "https://www.thetinycupboard.com/open-mic",
     "payment": "$2",
-    "sign_up": "dm @spaandaa on ig"
+    "sign_up": "check website for details"
   },
   {
     "name": "The Tiny Cupboard",
-    "mic_times": { "connect": [{ "id": "08a0947b" }] },
+    "mic_times": {
+      "connect": [
+        { "id": "976e3b7d" },
+        { "id": "dbe4dea3" },
+        { "id": "58617dbb" },
+        { "id": "937c0110" },
+        { "id": "976cd612" }
+      ]
+    },
     "venue": { "connect": { "id": "24ded3c0" } },
     "instagram": "https://www.instagram.com/thetinycupboard/",
     "website": "https://www.thetinycupboard.com/open-mic",
     "payment": "$2",
-    "sign_up": "in person"
+    "sign_up": "check website for details"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": {
+      "connect": [
+        { "id": "47a0249d" },
+        { "id": "508f8f1f" },
+        { "id": "a0670ec6" },
+        { "id": "b247f600" },
+        { "id": "6b9b7fdb" }
+      ]
+    },
+    "venue": { "connect": { "id": "24ded3c0" } },
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "check website for details"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": {
+      "connect": [{ "id": "cbd979d9" }, { "id": "34b5d809" }, { "id": "79ed5198" }, { "id": "60f36d58" }]
+    },
+    "venue": { "connect": { "id": "24ded3c0" } },
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "check website for details"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": {
+      "connect": [{ "id": "7381c6e4" }, { "id": "871ace0f" }, { "id": "49ff7b6b" }, { "id": "fafdbea0" }]
+    },
+    "venue": { "connect": { "id": "24ded3c0" } },
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "check website for details"
+  },
+  {
+    "name": "The Tiny Cupboard",
+    "mic_times": {
+      "connect": [{ "id": "55cab3e6" }, { "id": "7f0dfc7f" }, { "id": "b23e3673" }, { "id": "08a0947b" }]
+    },
+    "venue": { "connect": { "id": "24ded3c0" } },
+    "instagram": "https://www.instagram.com/thetinycupboard/",
+    "website": "https://www.thetinycupboard.com/open-mic",
+    "payment": "$2",
+    "sign_up": "check website for details"
   }
 ]
