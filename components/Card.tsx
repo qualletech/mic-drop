@@ -7,7 +7,7 @@ export default function Card({ mic }) {
   }
 
   return (
-    <div className="max-w-sm p-6 bg-white/70 border border-red rounded-lg shadow grid gap-2 grid-rows-[auto_1fr_auto] justify-between shadow-md">
+    <div className="max-w-sm p-6 bg-white/80 border border-red rounded-lg shadow grid gap-2 grid-rows-[auto_1fr_auto] justify-between shadow-md">
       <a
         href={`${mic.id}`}
         className="inline-flex items-center rounded-lg focus:ring-2 focus: ring-orange focus:outline-none focus:ring-offset-2 text-2xl font-bold text-red hover:text-red/80"

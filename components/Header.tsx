@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation"
 export default function Header() {
   const router = useRouter()
   return (
-    <nav className="bg-white/50 shadow">
+    <nav className="bg-white/80 shadow">
       <div className="flex flex-wrap items-center justify-between mx-auto p-6">
         <button
           type="button"
