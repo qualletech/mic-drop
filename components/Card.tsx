@@ -1,11 +1,6 @@
-import moment from "moment"
+import MicTimeRows from "./MicTimeRows"
 
 export default function Card({ mic }) {
-  function customSort(a, b) {
-    const order = ["first", "second", "third", "fourth", "weekly"]
-    return order.indexOf(a.frequency) - order.indexOf(b.frequency)
-  }
-
   return (
     <div className="max-w-sm p-6 bg-white/80 border border-red rounded-lg shadow grid gap-2 grid-rows-[auto_1fr_auto] justify-between shadow-md">
       <a
@@ -15,13 +10,7 @@ export default function Card({ mic }) {
         <h5>{mic.name}</h5>
       </a>
       <div>
-        {mic.mic_times
-          ?.sort(customSort)
-          .map((time) => (
-            <p>
-              {`${time.frequency === "weekly" ? "Every" : `Every ${time.frequency}`} ${time.weekday.slice(0, 1).toUpperCase()}${time.weekday.slice(1)}, ${moment(time.time, "HH:mm:ss").format("h:mma")}`}
-            </p>
-          ))}
+        <MicTimeRows micTimes={mic.mic_times} />
         <p className="mb-3">{`${mic.venue.borough.slice(0, 1).toUpperCase()}${mic.venue.borough.slice(1)}`}</p>
       </div>
 
