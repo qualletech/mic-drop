@@ -18,22 +18,28 @@ export async function GET() {
     })
 
     mics.sort((a, b) => {
-      const earliestA = a.mic_times.reduce((earliest, current) => {
-        if (!earliest || weekdayOrder[current.weekday] < weekdayOrder[earliest.weekday]) {
-          return current
-        }
-        return earliest
-      }, null)
+      const getEarliestTime = (micTimes) =>
+        micTimes.reduce((earliest, current) => {
+          if (
+            !earliest ||
+            weekdayOrder[current.weekday] < weekdayOrder[earliest.weekday] ||
+            (weekdayOrder[current.weekday] === weekdayOrder[earliest.weekday] && current.time < earliest.time)
+          ) {
+            return current
+          }
+          return earliest
+        }, null)
 
-      const earliestB = b.mic_times.reduce((earliest, current) => {
-        if (!earliest || weekdayOrder[current.weekday] < weekdayOrder[earliest.weekday]) {
-          return current
-        }
-        return earliest
-      }, null)
+      const earliestA = getEarliestTime(a.mic_times)
+      const earliestB = getEarliestTime(b.mic_times)
+
+      if (weekdayOrder[earliestA.weekday] === weekdayOrder[earliestB.weekday]) {
+        return earliestA.time.localeCompare(earliestB.time)
+      }
 
       return weekdayOrder[earliestA.weekday] - weekdayOrder[earliestB.weekday]
     })
+
     return Response.json(mics)
   } catch (error) {
     console.error("Error fetching mic data:", error)
