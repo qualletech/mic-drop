@@ -1,5 +1,6 @@
 "use client"
 
+import InstagramEmbed from "@/components/InstagramEmbed"
 import MicTimeRows from "@/components/MicTimeRows"
 import { useQuery } from "react-query"
 
@@ -71,13 +72,7 @@ export default function Page({ params }: { params: { mic_id: string } }) {
           )}
         </div>
       </div>
-      <div>
-        <blockquote className="instagram-media" data-instgrm-permalink={`${mic.instagram}`} data-instgrm-version="14">
-          <a href={`${mic.instagram}`} />
-          ufhreiufhe
-        </blockquote>
-        <script async defer src="//www.instagram.com/embed.js" />
-      </div>
+      <InstagramEmbed instagramLink={mic.instagram} />
     </main>
   )
 }
