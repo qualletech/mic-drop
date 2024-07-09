@@ -14,13 +14,16 @@ export default function MicTimeRows({ micTimes }) {
     return a.time.localeCompare(b.time)
   }
 
-  return micTimes
-    ? micTimes
-        .sort(customSort)
-        .map((time) => (
-          <p>
-            {`${time.frequency === "weekly" ? "Every" : `Every ${time.frequency}`} ${time.weekday.slice(0, 1).toUpperCase()}${time.weekday.slice(1)}, ${moment(time.time, "HH:mm:ss").format("h:mma")}`}
-          </p>
-        ))
-    : null
+  return micTimes ? (
+    <div>
+      <p>
+        <span className="font-bold">Time{micTimes?.length > 1 ? "s" : ""}:</span>
+      </p>
+      {micTimes.sort(customSort).map((time) => (
+        <p key={time.id}>
+          {`${time.frequency === "weekly" ? "Every" : `Every ${time.frequency}`} ${time.weekday.slice(0, 1).toUpperCase()}${time.weekday.slice(1)}, ${moment(time.time, "HH:mm:ss").format("h:mma")}`}
+        </p>
+      ))}
+    </div>
+  ) : null
 }
