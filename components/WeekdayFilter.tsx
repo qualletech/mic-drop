@@ -8,19 +8,17 @@ export default function WeekdayFilter({
   setFilters: any
 }) {
   const handleCheckBoxClick = (weekdayValue) => {
-    setFilters((prevFilters) => ({ ...prevFilters, [weekdayValue]: !prevFilters[weekdayValue] }))
+    if (filters?.[weekdayValue]) {
+      const newFilters = { ...filters }
+      delete newFilters[weekdayValue]
+      setFilters(newFilters)
+    } else {
+      setFilters((prevFilters) => ({ ...prevFilters, [weekdayValue]: true }))
+    }
   }
 
   const clearButtonClick = () => {
-    setFilters({
-      monday: false,
-      tuesday: false,
-      wednesday: false,
-      thursday: false,
-      friday: false,
-      saturday: false,
-      sunday: false,
-    })
+    setFilters(null)
   }
 
   return isWeekdayOpen ? (
@@ -31,7 +29,7 @@ export default function WeekdayFilter({
           <label htmlFor="vue-checkbox" className="grid grid-cols-[auto_1fr] gap-2 items-center w-full p-2.5 text-sm">
             <input
               type="checkbox"
-              checked={filters.monday}
+              checked={filters?.monday || false}
               onChange={() => handleCheckBoxClick("monday")}
               className="w-4 h-4 accent-red focus:ring-orange focus:ring-1 cursor-pointer"
             />
@@ -42,7 +40,7 @@ export default function WeekdayFilter({
           <label htmlFor="vue-checkbox" className="grid grid-cols-[auto_1fr] gap-2 items-center w-full p-2.5 text-sm">
             <input
               type="checkbox"
-              checked={filters.tuesday}
+              checked={filters?.tuesday || false}
               onChange={() => handleCheckBoxClick("tuesday")}
               className="w-4 h-4 accent-red focus:ring-orange focus:ring-1 cursor-pointer"
             />
@@ -53,7 +51,7 @@ export default function WeekdayFilter({
           <label htmlFor="vue-checkbox" className="grid grid-cols-[auto_1fr] gap-2 items-center w-full p-2.5 text-sm">
             <input
               type="checkbox"
-              checked={filters.wednesday}
+              checked={filters?.wednesday || false}
               onChange={() => handleCheckBoxClick("wednesday")}
               className="w-4 h-4 accent-red focus:ring-orange focus:ring-1 cursor-pointer"
             />
@@ -64,7 +62,7 @@ export default function WeekdayFilter({
           <label htmlFor="vue-checkbox" className="grid grid-cols-[auto_1fr] gap-2 items-center w-full p-2.5 text-sm">
             <input
               type="checkbox"
-              checked={filters.thursday}
+              checked={filters?.thursday || false}
               onChange={() => handleCheckBoxClick("thursday")}
               className="w-4 h-4 accent-red focus:ring-orange focus:ring-1 cursor-pointer"
             />
@@ -75,7 +73,7 @@ export default function WeekdayFilter({
           <label htmlFor="vue-checkbox" className="grid grid-cols-[auto_1fr] gap-2 items-center w-full p-2.5 text-sm">
             <input
               type="checkbox"
-              checked={filters.friday}
+              checked={filters?.friday || false}
               onChange={() => handleCheckBoxClick("friday")}
               className="w-4 h-4 accent-red focus:ring-orange focus:ring-1 cursor-pointer"
             />
@@ -86,7 +84,7 @@ export default function WeekdayFilter({
           <label htmlFor="vue-checkbox" className="grid grid-cols-[auto_1fr] gap-2 items-center w-full p-2.5 text-sm">
             <input
               type="checkbox"
-              checked={filters.saturday}
+              checked={filters?.saturday || false}
               onChange={() => handleCheckBoxClick("saturday")}
               className="w-4 h-4 accent-red focus:ring-orange focus:ring-1 cursor-pointer"
             />
@@ -97,7 +95,7 @@ export default function WeekdayFilter({
           <label htmlFor="vue-checkbox" className="grid grid-cols-[auto_1fr] gap-2 items-center w-full p-2.5 text-sm">
             <input
               type="checkbox"
-              checked={filters.sunday}
+              checked={filters?.sunday || false}
               onChange={() => handleCheckBoxClick("sunday")}
               className="w-4 h-4 accent-red focus:ring-orange focus:ring-1 cursor-pointer"
             />
