@@ -7,7 +7,21 @@ export default function WeekdayFilter({
   filters: any
   setFilters: any
 }) {
-  const handleCheckBoxClick = (weekdayValue) => {}
+  const handleCheckBoxClick = (weekdayValue) => {
+    setFilters((prevFilters) => ({ ...prevFilters, [weekdayValue]: !prevFilters[weekdayValue] }))
+  }
+
+  const clearButtonClick = () => {
+    setFilters({
+      monday: false,
+      tuesday: false,
+      wednesday: false,
+      thursday: false,
+      friday: false,
+      saturday: false,
+      sunday: false,
+    })
+  }
 
   return isWeekdayOpen ? (
     <div className="grid mt-1 absolute top-full right-0 rounded-lg border-2 border-red  bg-white w-60">
@@ -17,8 +31,8 @@ export default function WeekdayFilter({
           <label htmlFor="vue-checkbox" className="grid grid-cols-[auto_1fr] gap-2 items-center w-full p-2.5 text-sm">
             <input
               type="checkbox"
-              value="monday"
-              onClick={() => setFilters()}
+              checked={filters.monday}
+              onChange={() => handleCheckBoxClick("monday")}
               className="w-4 h-4 accent-red focus:ring-orange focus:ring-1 cursor-pointer"
             />
             Monday
@@ -28,7 +42,8 @@ export default function WeekdayFilter({
           <label htmlFor="vue-checkbox" className="grid grid-cols-[auto_1fr] gap-2 items-center w-full p-2.5 text-sm">
             <input
               type="checkbox"
-              value=""
+              checked={filters.tuesday}
+              onChange={() => handleCheckBoxClick("tuesday")}
               className="w-4 h-4 accent-red focus:ring-orange focus:ring-1 cursor-pointer"
             />
             Tuesday
@@ -38,7 +53,8 @@ export default function WeekdayFilter({
           <label htmlFor="vue-checkbox" className="grid grid-cols-[auto_1fr] gap-2 items-center w-full p-2.5 text-sm">
             <input
               type="checkbox"
-              value=""
+              checked={filters.wednesday}
+              onChange={() => handleCheckBoxClick("wednesday")}
               className="w-4 h-4 accent-red focus:ring-orange focus:ring-1 cursor-pointer"
             />
             Wednesday
@@ -48,7 +64,8 @@ export default function WeekdayFilter({
           <label htmlFor="vue-checkbox" className="grid grid-cols-[auto_1fr] gap-2 items-center w-full p-2.5 text-sm">
             <input
               type="checkbox"
-              value=""
+              checked={filters.thursday}
+              onChange={() => handleCheckBoxClick("thursday")}
               className="w-4 h-4 accent-red focus:ring-orange focus:ring-1 cursor-pointer"
             />
             Thursday
@@ -58,7 +75,8 @@ export default function WeekdayFilter({
           <label htmlFor="vue-checkbox" className="grid grid-cols-[auto_1fr] gap-2 items-center w-full p-2.5 text-sm">
             <input
               type="checkbox"
-              value=""
+              checked={filters.friday}
+              onChange={() => handleCheckBoxClick("friday")}
               className="w-4 h-4 accent-red focus:ring-orange focus:ring-1 cursor-pointer"
             />
             Friday
@@ -68,7 +86,8 @@ export default function WeekdayFilter({
           <label htmlFor="vue-checkbox" className="grid grid-cols-[auto_1fr] gap-2 items-center w-full p-2.5 text-sm">
             <input
               type="checkbox"
-              value=""
+              checked={filters.saturday}
+              onChange={() => handleCheckBoxClick("saturday")}
               className="w-4 h-4 accent-red focus:ring-orange focus:ring-1 cursor-pointer"
             />
             Saturday
@@ -78,7 +97,8 @@ export default function WeekdayFilter({
           <label htmlFor="vue-checkbox" className="grid grid-cols-[auto_1fr] gap-2 items-center w-full p-2.5 text-sm">
             <input
               type="checkbox"
-              value=""
+              checked={filters.sunday}
+              onChange={() => handleCheckBoxClick("sunday")}
               className="w-4 h-4 accent-red focus:ring-orange focus:ring-1 cursor-pointer"
             />
             Sunday
@@ -88,7 +108,7 @@ export default function WeekdayFilter({
       <button
         type="button"
         className="border-t border-red border-b border-red px-2.5 py-1.5 text-sm hover:bg-light/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-orange text-start"
-        onClick={() => setFilters((prevState) => ({ ...prevState, weekday: [] }))}
+        onClick={clearButtonClick}
       >
         Clear Selection
       </button>
