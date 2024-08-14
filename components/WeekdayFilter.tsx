@@ -18,7 +18,7 @@ export default function WeekdayFilter({
   }
 
   const clearButtonClick = () => {
-    setFilters(null)
+    setFilters({})
   }
 
   return isWeekdayOpen ? (
