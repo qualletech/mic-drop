@@ -5,7 +5,8 @@ import Card from "@/components/Card"
 import FilterSelector from "@/components/FilterSelector"
 import TimeFilter from "@/components/TimeFilter"
 import WeekdayFilter from "@/components/WeekdayFilter"
-import { useState } from "react"
+import moment from "moment"
+import { useEffect, useState } from "react"
 import { useQuery } from "react-query"
 
 const fetchMics = async () => {
@@ -18,13 +19,12 @@ const fetchMics = async () => {
 
 export default function Page() {
   const { data: mics } = useQuery("mics", fetchMics)
+  const [filteredMics, setFilteredMics] = useState([])
   const [isOpen, setIsOpen] = useState<boolean>(false)
   const [filterOpen, setFilterOpen] = useState<string | null>(null)
-  const [filters, setFilters] = useState<{ [filterName: string]: Array<string | null> }>({
-    weekday: [],
-    time: [],
-    borough: [],
-  })
+  const [weekdayFilters, setWeekdayFilters] = useState<{ [weekday: string]: boolean }>({})
+  const [boroughFilters, setBoroughFilters] = useState<{ [borough: string]: boolean }>({})
+  const [timeFilters, setTimeFilters] = useState<{ [timeFilter: string]: string | null }>({})
 
   const handleFilterButtonClick = () => {
     setIsOpen(!isOpen)
@@ -36,8 +36,38 @@ export default function Page() {
     setFilterOpen(filterName)
   }
 
+  useEffect(() => {
+    if (mics?.length > 0) setFilteredMics(mics)
+  }, [mics])
+
+  useEffect(() => {
+    let newMics = mics
+    if (Object.keys(weekdayFilters).length > 0) {
+      newMics = newMics.filter((mic) => mic.mic_times.some((t) => weekdayFilters[t.weekday]))
+    }
+
+    if (timeFilters?.after || timeFilters?.before) {
+      newMics = newMics.filter((mic) =>
+        mic.mic_times.some((t) => {
+          const micTime = moment(t.time, "HH:mm:ss")
+          const afterTime = timeFilters.after ? moment(timeFilters.after, "HH:mm") : null
+          const beforeTime = timeFilters.before ? moment(timeFilters.before, "HH:mm") : null
+
+          return (!afterTime || micTime.isSameOrAfter(afterTime)) && (!beforeTime || micTime.isSameOrBefore(beforeTime))
+        }),
+      )
+    }
+
+    // Filter by borough if any borough filter is selected
+    if (Object.keys(boroughFilters).length > 0) {
+      newMics = newMics.filter((mic) => boroughFilters[mic.venue.borough])
+    }
+
+    setFilteredMics(newMics)
+  }, [weekdayFilters, boroughFilters, timeFilters, mics])
+
   return (
-    <main className="grid grid-rows-[auto_1fr] gap-3 max-h-full overflow-auto">
+    <main className="grid grid-rows-[auto_1fr] gap-3 h-full overflow-auto">
       <div className="grid grid-cols-[1fr_auto] gap-3 px-12 pt-6">
         <h1 className="text-4xl font-extrabold ">NYC Open Mics</h1>
         <div className="relative">
@@ -65,13 +95,27 @@ export default function Page() {
             <span className="hidden">Filter Mics</span>
           </button>
           <FilterSelector isOpen={isOpen} handleClick={handleClick} />
-          <WeekdayFilter isWeekdayOpen={filterOpen === "weekday"} filters={filters} setFilters={setFilters} />
-          <TimeFilter isTimeOpen={filterOpen === "time"} filters={filters} setFilters={setFilters} />
-          <BoroughFilter isBoroughOpen={filterOpen === "borough"} filters={filters} setFilters={setFilters} />
+          <WeekdayFilter
+            isWeekdayOpen={filterOpen === "weekday"}
+            filters={weekdayFilters}
+            setFilters={setWeekdayFilters}
+          />
+          <TimeFilter isTimeOpen={filterOpen === "time"} filters={timeFilters} setFilters={setTimeFilters} />
+          <BoroughFilter
+            isBoroughOpen={filterOpen === "borough"}
+            filters={boroughFilters}
+            setFilters={setBoroughFilters}
+          />
         </div>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 overflow-auto max-h-full px-12 py-6">
-        {mics?.map((m) => <Card mic={m} />)}
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 overflow-auto h-full px-12 py-6">
+        {filteredMics?.length ? (
+          filteredMics?.map((m) => <Card key={m.id} mic={m} />)
+        ) : (
+          <p className="col-span-full py-24 text-lg font-bold text-orange text-center">
+            No mics found. Try adjusting your filters.
+          </p>
+        )}
       </div>
     </main>
   )
