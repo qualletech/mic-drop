@@ -8,17 +8,17 @@ export default function BoroughFilter({
   setFilters: any
 }) {
   const handleCheckBoxClick = (boroughValue) => {
-    setFilters((prevFilters) => ({ ...prevFilters, [boroughValue]: !prevFilters[boroughValue] }))
+    if (filters?.[boroughValue]) {
+      const newFilters = { ...filters }
+      delete newFilters[boroughValue]
+      setFilters(newFilters)
+    } else {
+      setFilters((prevFilters) => ({ ...prevFilters, [boroughValue]: true }))
+    }
   }
 
   const clearButtonClick = () => {
-    setFilters({
-      manhattan: false,
-      brooklyn: false,
-      queens: false,
-      bronx: false,
-      staten_island: false,
-    })
+    setFilters({})
   }
 
   return isBoroughOpen ? (
@@ -29,7 +29,7 @@ export default function BoroughFilter({
           <label htmlFor="vue-checkbox" className="grid grid-cols-[auto_1fr] gap-2 items-center w-full p-2.5 text-sm">
             <input
               type="checkbox"
-              checked={filters.manhattan}
+              checked={filters?.manhattan || false}
               onChange={() => handleCheckBoxClick("manhattan")}
               className="w-4 h-4 accent-red focus:ring-orange focus:ring-1 cursor-pointer"
             />
@@ -40,7 +40,7 @@ export default function BoroughFilter({
           <label htmlFor="vue-checkbox" className="grid grid-cols-[auto_1fr] gap-2 items-center w-full p-2.5 text-sm">
             <input
               type="checkbox"
-              checked={filters.brooklyn}
+              checked={filters?.brooklyn || false}
               onChange={() => handleCheckBoxClick("brooklyn")}
               className="w-4 h-4 accent-red focus:ring-orange focus:ring-1 cursor-pointer"
             />
@@ -51,7 +51,7 @@ export default function BoroughFilter({
           <label htmlFor="vue-checkbox" className="grid grid-cols-[auto_1fr] gap-2 items-center w-full p-2.5 text-sm">
             <input
               type="checkbox"
-              checked={filters.queens}
+              checked={filters?.queens || false}
               onChange={() => handleCheckBoxClick("queens")}
               className="w-4 h-4 accent-red focus:ring-orange focus:ring-1 cursor-pointer"
             />
@@ -62,7 +62,7 @@ export default function BoroughFilter({
           <label htmlFor="vue-checkbox" className="grid grid-cols-[auto_1fr] gap-2 items-center w-full p-2.5 text-sm">
             <input
               type="checkbox"
-              checked={filters.bronx}
+              checked={filters?.bronx || false}
               onChange={() => handleCheckBoxClick("bronx")}
               className="w-4 h-4 accent-red focus:ring-orange focus:ring-1 cursor-pointer"
             />
@@ -73,7 +73,7 @@ export default function BoroughFilter({
           <label htmlFor="vue-checkbox" className="grid grid-cols-[auto_1fr] gap-2 items-center w-full p-2.5 text-sm">
             <input
               type="checkbox"
-              checked={filters.staten_island}
+              checked={filters?.staten_island || false}
               onChange={() => handleCheckBoxClick("staten_island")}
               className="w-4 h-4 accent-red focus:ring-orange focus:ring-1 cursor-pointer"
             />
