@@ -12,10 +12,7 @@ export default function TimeFilter({
   }
 
   const clearButtonClick = () => {
-    setFilters({
-      after: "",
-      before: "",
-    })
+    setFilters({})
   }
 
   return isTimeOpen ? (
@@ -27,7 +24,7 @@ export default function TimeFilter({
             on or after
             <input
               type="time"
-              value={filters.after}
+              value={filters?.after || ""}
               onChange={(e) => handleTimeChange("after", e.target.value)}
               className="w-full accent-red focus:ring-orange focus:ring-1 cursor-pointer"
             />
@@ -38,7 +35,7 @@ export default function TimeFilter({
             on or before
             <input
               type="time"
-              value={filters.before}
+              value={filters?.before || ""}
               onChange={(e) => handleTimeChange("before", e.target.value)}
               className="accent-red focus:ring-orange focus:ring-1 cursor-pointer"
             />
