@@ -1,4 +1,10 @@
+"use client"
+
+import { useState } from "react"
+
 export default function Page() {
+  const [requestType, setRequestType] = useState<string>("general")
+
   return (
     <div className="grid md:grid-cols-[1fr_auto] max-h-full overflow-auto px-12 py-6">
       <div className="grid content-start gap-5">
@@ -9,10 +15,9 @@ export default function Page() {
             <select
               id="request-type"
               className="border border-black/30 text-sm rounded-lg focus:ring-2 focus:  ring-orange focus:outline-none  block w-full p-2.5"
+              onChange={(event) => setRequestType(event.target.value)}
             >
-              <option selected value="general">
-                General Question
-              </option>
+              <option value="general">General Question</option>
               <option value="new">New Mic Submission</option>
               <option value="edit">Edit Mic Details</option>
               <option value="suggest">Suggestions for Mic Drop</option>
