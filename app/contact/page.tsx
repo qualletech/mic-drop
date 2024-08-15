@@ -1,5 +1,6 @@
 "use client"
 
+import NewMicForm from "@/components/NewMicForm"
 import { useState } from "react"
 
 export default function Page() {
@@ -17,10 +18,9 @@ export default function Page() {
               className="border border-black/30 text-sm rounded-lg focus:ring-2 focus:  ring-orange focus:outline-none  block w-full p-2.5"
               onChange={(event) => setRequestType(event.target.value)}
             >
-              <option value="general">General Question</option>
-              <option value="new">New Mic Submission</option>
-              <option value="edit">Edit Mic Details</option>
-              <option value="suggest">Suggestions for Mic Drop</option>
+              <option value="general">General Question & Suggestions</option>
+              <option value="new">Submit a new Mic</option>
+              <option value="edit">Submit an edit for an existing Mic</option>
             </select>
           </label>
           <label htmlFor="name" className="block mb-2 text-sm font-medium">
@@ -41,15 +41,25 @@ export default function Page() {
               className="border border-black/30 text-sm rounded-lg focus:ring-2 focus:  ring-orange focus:outline-none block w-full p-2.5"
             />
           </label>
-          <label htmlFor="request" className="block mb-2 text-sm font-medium">
-            Request
-            <textarea
-              id="request"
-              rows={5}
-              placeholder="Your information here"
-              className="border border-black/30 text-sm rounded-lg focus:ring-2 focus:  ring-orange focus:outline-none block w-full p-2.5 resize-y"
-            />
-          </label>
+          {requestType === "new" ? (
+            <NewMicForm />
+          ) : (
+            <label htmlFor="request" className="block mb-2 text-sm font-medium">
+              Request <span className="text-red font-bold">*</span>
+              {requestType === "edit" && (
+                <span className="block text-xs italic">
+                  Please specify the name of the mic that needs edits and what needs to be changed
+                </span>
+              )}
+              <textarea
+                required
+                id="request"
+                rows={5}
+                placeholder="Your information here"
+                className="border border-black/30 text-sm rounded-lg focus:ring-2 focus:  ring-orange focus:outline-none block w-full p-2.5 resize-y"
+              />
+            </label>
+          )}
           <div className="grid grid-flow-col justify-start items-center gap-6">
             <button
               type="submit"
