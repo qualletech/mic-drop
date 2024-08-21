@@ -5,6 +5,34 @@ import { useState } from "react"
 
 export default function Page() {
   const [requestType, setRequestType] = useState<string>("general")
+  const [requestDetails, setRequestDetails] = useState(null)
+  const [loading, setLoading] = useState(false)
+
+  const handleFormUpdate = (key, value) => {
+    setRequestDetails((prevDetails) => ({ ...prevDetails, [key]: value }))
+  }
+
+  const buttonDisabled = requestDetails === null || requestDetails?.message === null || requestDetails?.message === ""
+
+  const onFormSubmit = async (event) => {
+    if (buttonDisabled) return
+    event.preventDefault()
+    setLoading(true)
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      body: JSON.stringify({
+        type: requestType,
+        name: requestDetails?.name || undefined,
+        email_address: requestDetails?.email || undefined,
+        message_body: requestDetails?.message,
+      }),
+    })
+    if (!response.ok) {
+      throw new Error("Failed to send message")
+    }
+    setLoading(false)
+    setRequestDetails(null)
+  }
 
   return (
     <div className="grid md:grid-cols-[1fr_auto] max-h-full overflow-auto px-12 py-6">
@@ -15,12 +43,12 @@ export default function Page() {
             Request Type
             <select
               id="request-type"
-              className="border border-black/30 text-sm rounded-lg focus:ring-2 focus:  ring-orange focus:outline-none  block w-full p-2.5"
+              className="border border-black/30 rounded-lg focus:ring-2 focus:  ring-orange focus:outline-none block w-full p-2.5"
               onChange={(event) => setRequestType(event.target.value)}
             >
               <option value="general">General Question & Suggestions</option>
-              <option value="new">Submit a new Mic</option>
-              <option value="edit">Submit an edit for an existing Mic</option>
+              <option value="new_submission">Submit a new Mic</option>
+              <option value="change_request">Submit an edit for an existing Mic</option>
             </select>
           </label>
           <label htmlFor="name" className="block mb-2 text-sm font-medium">
@@ -29,6 +57,8 @@ export default function Page() {
               placeholder="Your Name"
               type="text"
               id="name"
+              value={requestDetails?.name || ""}
+              onChange={(e) => handleFormUpdate("name", e.target.value)}
               className="border border-black/30 text-sm rounded-lg focus:ring-2 focus:  ring-orange focus:outline-none block w-full p-2.5"
             />
           </label>
@@ -38,15 +68,17 @@ export default function Page() {
               type="text"
               placeholder="yourname@email.com"
               id="email"
+              value={requestDetails?.email || ""}
+              onChange={(e) => handleFormUpdate("email", e.target.value)}
               className="border border-black/30 text-sm rounded-lg focus:ring-2 focus:  ring-orange focus:outline-none block w-full p-2.5"
             />
           </label>
-          {requestType === "new" ? (
-            <NewMicForm />
+          {requestType === "new_submission" ? (
+            <NewMicForm handleFormUpdate={handleFormUpdate} />
           ) : (
             <label htmlFor="request" className="block mb-2 text-sm font-medium">
               Request <span className="text-red font-bold">*</span>
-              {requestType === "edit" && (
+              {requestType === "change_request" && (
                 <span className="block text-xs italic">
                   Please specify the name of the mic that needs edits and what needs to be changed
                 </span>
@@ -56,20 +88,24 @@ export default function Page() {
                 id="request"
                 rows={5}
                 placeholder="Your information here"
+                value={requestDetails?.message || ""}
+                onChange={(e) => handleFormUpdate("message", e.target.value)}
                 className="border border-black/30 text-sm rounded-lg focus:ring-2 focus:  ring-orange focus:outline-none block w-full p-2.5 resize-y"
               />
             </label>
           )}
           <div className="grid grid-flow-col justify-start items-center gap-6">
             <button
+              onClick={onFormSubmit}
               type="submit"
-              className="rounded-lg bg-orange px-3.5 py-2.5 text-sm font-semibold text-light shadow-sm hover:bg-orange/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red"
+              className={`rounded-lg bg-orange px-3.5 py-2.5 text-sm font-semibold text-light shadow-sm hover:bg-orange/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red ${buttonDisabled || loading ? `opacity-50 cursor-not-allowed` : ""}`}
             >
-              Submit
+              {loading ? "Sending" : "Submit"}
             </button>
             <a
               href="/"
               className="text-sm font-semibold hover:underline rounded-lg focus-visible:outline focus-visible:outline-2 px-3.5 py-2.5 focus-visible:outline-offset-2 focus-visible:outline-red"
+              onClick={() => setRequestDetails(null)}
             >
               Cancel
             </a>
