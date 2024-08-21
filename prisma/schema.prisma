@@ -96,5 +96,4 @@ enum MESSAGE_TYPE {
   change_request
   new_submission
   general
-  suggestion
 }
