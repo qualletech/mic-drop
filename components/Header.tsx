@@ -6,7 +6,7 @@ export default function Header() {
   const router = useRouter()
   return (
     <nav className="bg-white/80 shadow">
-      <div className="flex flex-wrap items-center justify-between mx-auto p-6">
+      <div className="flex flex-wrap items-center justify-between mx-auto px-6 py-3">
         <button
           type="button"
           onClick={() => router.push("/")}
