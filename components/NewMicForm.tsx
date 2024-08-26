@@ -1,4 +1,4 @@
-export default function NewMicForm(requestDetails, handleFormUpdate) {
+export default function NewMicForm({ requestDetails, handleFormUpdate }) {
   return (
     <>
       <div className="grid md:grid-cols-2 md:gap-8">
