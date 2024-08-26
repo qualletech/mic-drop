@@ -12,7 +12,11 @@ export default function Page() {
     setRequestDetails((prevDetails) => ({ ...prevDetails, [key]: value }))
   }
 
-  const buttonDisabled = requestDetails === null || requestDetails?.message === null || requestDetails?.message === ""
+  const generalAndEditValidation = requestDetails?.message
+
+  const newMicValidation = requestDetails?.micName && requestDetails?.venue && requestDetails?.micTime
+
+  const buttonDisabled = requestType === "new_submission" ? !newMicValidation : !generalAndEditValidation
 
   const onFormSubmit = async (event) => {
     if (buttonDisabled) return
@@ -24,7 +28,10 @@ export default function Page() {
         type: requestType,
         name: requestDetails?.name || undefined,
         email_address: requestDetails?.email || undefined,
-        message_body: requestDetails?.message,
+        message_body:
+          requestType === "new_submission"
+            ? `mic_name: ${requestDetails?.micName}, venue: ${requestDetails?.venue}, mic_times: ${requestDetails?.micTime}, sign_up: ${requestDetails?.signUp || undefined}, set_time: ${requestDetails?.setTime || undefined}, payment: ${requestDetails?.payment || undefined}, instagram: ${requestDetails?.instagram || undefined}, website: ${requestDetails?.website || undefined},`
+            : requestDetails?.message,
       }),
     })
     if (!response.ok) {
@@ -51,30 +58,32 @@ export default function Page() {
               <option value="change_request">Submit an edit for an existing Mic</option>
             </select>
           </label>
-          <label htmlFor="name" className="block mb-2 text-sm font-medium">
-            Name
-            <input
-              placeholder="Your Name"
-              type="text"
-              id="name"
-              value={requestDetails?.name || ""}
-              onChange={(e) => handleFormUpdate("name", e.target.value)}
-              className="border border-black/30 text-sm rounded-lg focus:ring-2 focus:  ring-orange focus:outline-none block w-full p-2.5"
-            />
-          </label>
-          <label htmlFor="email" className="block mb-2 text-sm font-medium">
-            Email
-            <input
-              type="text"
-              placeholder="yourname@email.com"
-              id="email"
-              value={requestDetails?.email || ""}
-              onChange={(e) => handleFormUpdate("email", e.target.value)}
-              className="border border-black/30 text-sm rounded-lg focus:ring-2 focus:  ring-orange focus:outline-none block w-full p-2.5"
-            />
-          </label>
+          <div className="grid md:grid-cols-2 md:gap-8">
+            <label htmlFor="name" className="block mb-2 text-sm font-medium">
+              Name
+              <input
+                placeholder="Your Name"
+                type="text"
+                id="name"
+                value={requestDetails?.name || ""}
+                onChange={(e) => handleFormUpdate("name", e.target.value)}
+                className="border border-black/30 text-sm rounded-lg focus:ring-2 focus:  ring-orange focus:outline-none block w-full p-2.5"
+              />
+            </label>
+            <label htmlFor="email" className="block mb-2 text-sm font-medium">
+              Email
+              <input
+                type="text"
+                placeholder="yourname@email.com"
+                id="email"
+                value={requestDetails?.email || ""}
+                onChange={(e) => handleFormUpdate("email", e.target.value)}
+                className="border border-black/30 text-sm rounded-lg focus:ring-2 focus:  ring-orange focus:outline-none block w-full p-2.5"
+              />
+            </label>
+          </div>
           {requestType === "new_submission" ? (
-            <NewMicForm handleFormUpdate={handleFormUpdate} />
+            <NewMicForm handleFormUpdate={handleFormUpdate} requestDetails={requestDetails} />
           ) : (
             <label htmlFor="request" className="block mb-2 text-sm font-medium">
               Request <span className="text-red font-bold">*</span>
