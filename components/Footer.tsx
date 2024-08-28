@@ -12,7 +12,7 @@ export default function Footer() {
           </a>
           . All Rights Reserved.
           <br />
-          NYC's Open Mic Dashboard
+          NYC's Open Mic Dashboard - Developed by <a href="https://qualletech.com/">Qualle Tech</a>
         </span>
         <ul className="flex flex-wrap items-center mt-3 text-sm font-medium sm:mt-0">
           <li>
