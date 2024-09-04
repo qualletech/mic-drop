@@ -6,7 +6,7 @@ export default function Header() {
   const router = useRouter()
   return (
     <nav className="bg-white/80 shadow h-fit">
-      <div className="grid grid-flow-col items-center  justify-between mx-auto px-6 py-3">
+      <div className="grid grid-flow-col gap-4 items-center  justify-between px-4 md:px-6 py-3">
         <button
           type="button"
           onClick={() => router.push("/")}
@@ -16,7 +16,7 @@ export default function Header() {
         </button>
         <button
           type="button"
-          className="rounded-lg px-3.5 py-2.5 text-md font-bold text-red hover:text-red/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange"
+          className="rounded-lg text-md font-bold text-red hover:text-red/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange"
           onClick={() => router.push("/contact")}
         >
           Suggestion Box
