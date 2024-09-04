@@ -121,7 +121,7 @@ export default function Page() {
           </div>
         </form>
       </div>
-      <img className="aspect-auto w-3/4 py-16 justify-self-center md:block hidden" src="./mic-pic.png" alt="" />
+      <img className="aspect-auto w-3/4 pt-8 justify-self-end md:block hidden" src="./contact-icon.png" alt="" />
     </div>
   )
 }
