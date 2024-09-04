@@ -21,7 +21,7 @@ export default function MicTimeRows({ micTimes }) {
       </p>
       {micTimes.sort(customSort).map((time) => (
         <p key={time.id}>
-          {`${time.frequency === "weekly" ? "Every" : `Every ${time.frequency}`} ${time.weekday.slice(0, 1).toUpperCase()}${time.weekday.slice(1)}, ${moment(time.time, "HH:mm:ss").format("h:mma")}`}
+          {`${time.frequency !== "weekly" ? `${time.frequency.slice(0, 1).toUpperCase()}${time.frequency.slice(1)}` : ""} ${time.weekday.slice(0, 1).toUpperCase()}${time.weekday.slice(1)}, ${moment(time.time, "HH:mm:ss").format("h:mma")}`}
         </p>
       ))}
     </div>
