@@ -44,7 +44,7 @@ export default function Page() {
   return (
     <div className="grid md:grid-cols-[1fr_auto] max-h-full overflow-auto px-12 py-6">
       <div className="grid content-start gap-5">
-        <h1 className="text-4xl font-extrabold">Contact Us</h1>
+        <h1 className="text-4xl font-extrabold">Suggestion Box</h1>
         <form className="grid gap-2">
           <label htmlFor="request-type" className="block mb-2 text-sm font-medium">
             Request Type
