@@ -70,8 +70,8 @@ export default function Page() {
 
   return (
     <main className="grid grid-rows-[auto_1fr] gap-3 h-full overflow-auto">
-      <div className="grid grid-cols-[1fr_auto] gap-3 px-12 pt-6">
-        <h1 className="text-4xl font-extrabold ">NYC Open Mics</h1>
+      <div className="grid grid-cols-[1fr_auto] gap-3 items-center px-4 pt-4 md:px-12 md:pt-6">
+        <h1 className="text-2xl md:text-4xl font-extrabold ">NYC Open Mics</h1>
         <div className="relative">
           <button
             type="button"
@@ -110,7 +110,7 @@ export default function Page() {
           />
         </div>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 overflow-auto h-fit px-12 py-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 overflow-auto h-fit px-6 py-3 md:px-12 md:py-6">
         {filteredMics?.length ? (
           filteredMics?.map((m) => <Card key={m.id} mic={m} />)
         ) : (
