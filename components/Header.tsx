@@ -16,7 +16,7 @@ export default function Header() {
         </button>
         <button
           type="button"
-          className="rounded-lg border-2 border-red px-3.5 py-2.5 text-md font-bold text-red shadow-sm hover:bg-light/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange"
+          className="rounded-lg px-3.5 py-2.5 text-md font-bold text-red hover:text-red/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange"
           onClick={() => router.push("/contact")}
         >
           Suggestion Box
