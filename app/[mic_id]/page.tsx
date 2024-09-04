@@ -19,7 +19,7 @@ export default function Page({ params }: { params: { mic_id: string } }) {
   if (isLoading) return <Loading />
   if (isError) return <Error />
   return (
-    <main className="grid gap-3 lg:gap-10 max-h-full overflow-auto px-12 py-6">
+    <main className="grid gap-3 lg:gap-10 max-h-full overflow-auto px-6 py-3 md:px-12 md:py-6">
       <button
         type="button"
         onClick={() => router.back()}
@@ -39,7 +39,7 @@ export default function Page({ params }: { params: { mic_id: string } }) {
 
       <div className="grid lg:grid-cols-2 gap-2 lg:px-8">
         <div className="grid gap-3 content-start">
-          <h1 className="text-4xl font-extrabold">{mic.name}</h1>
+          <h1 className="text-2xl md:text-4xl font-extrabold">{mic.name}</h1>
           <div>
             <p className="font-bold">{mic.venue.name}</p>
             <p>{mic.venue.street_address}</p>
