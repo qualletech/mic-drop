@@ -120,7 +120,7 @@ export default function Page() {
         {filteredMics?.length ? (
           filteredMics?.map((m) => <Card key={m.id} mic={m} />)
         ) : (
-          <p className="col-span-full py-24 text-lg font-bold text-orange text-center">
+          <p className="col-span-full py-24 text-lg font-bold text-red text-center">
             No mics found. You should start one! <br /> Or try adjusting your filters.
           </p>
         )}
