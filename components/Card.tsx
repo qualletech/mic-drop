@@ -18,7 +18,7 @@ export default function Card({ mic }) {
         href={`${mic.id}`}
         className="grid grid-flow-col justify-start items-center place-self-start px-3 py-2 text-sm font-medium text-center text-light bg-red rounded-lg hover:bg-red/80 focus:ring-2 focus:ring-orange focus:outline-none max-h-content"
       >
-        <p className="flex-shrink-0">
+        <p>
           More Info <span className="hidden"> about {mic.name}</span>
         </p>
         <svg
