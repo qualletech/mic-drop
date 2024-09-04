@@ -1,5 +1,7 @@
 "use client"
 
+import Error from "../error"
+import Loading from "../loading"
 import GoogleMapsEmbed from "@/components/GoogleMapsEmbed"
 import MicTimeRows from "@/components/MicTimeRows"
 import { useRouter } from "next/navigation"
@@ -7,9 +9,6 @@ import { useQuery } from "react-query"
 
 const fetchMicData = async (micId: string) => {
   const response = await fetch(`/api/mics/${micId}`)
-  if (!response.ok) {
-    throw new Error("Failed to fetch mic data")
-  }
   return response.json()
 }
 
@@ -17,8 +16,8 @@ export default function Page({ params }: { params: { mic_id: string } }) {
   const router = useRouter()
   const { data: mic, isLoading, isError } = useQuery(["mic", params.mic_id], () => fetchMicData(params.mic_id))
 
-  if (isLoading) return <div>Loading...</div>
-  if (isError) return <div>Error fetching mic data</div>
+  if (isLoading) return <Loading />
+  if (isError) return <Error />
   return (
     <main className="grid gap-3 lg:gap-10 max-h-full overflow-auto px-12 py-6">
       <button
