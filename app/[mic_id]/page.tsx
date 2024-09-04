@@ -2,6 +2,7 @@
 
 import GoogleMapsEmbed from "@/components/GoogleMapsEmbed"
 import MicTimeRows from "@/components/MicTimeRows"
+import { useRouter } from "next/navigation"
 import { useQuery } from "react-query"
 
 const fetchMicData = async (micId: string) => {
@@ -13,15 +14,33 @@ const fetchMicData = async (micId: string) => {
 }
 
 export default function Page({ params }: { params: { mic_id: string } }) {
+  const router = useRouter()
   const { data: mic, isLoading, isError } = useQuery(["mic", params.mic_id], () => fetchMicData(params.mic_id))
 
   if (isLoading) return <div>Loading...</div>
   if (isError) return <div>Error fetching mic data</div>
   return (
-    <main className="grid lg:gap-10 max-h-full overflow-auto px-12 py-6">
-      <h1 className="text-4xl font-extrabold">{mic.name}</h1>
-      <div className="grid lg:grid-cols-2 gap-2">
+    <main className="grid gap-3 lg:gap-10 max-h-full overflow-auto px-12 py-6">
+      <button
+        type="button"
+        onClick={() => router.back()}
+        className="grid grid-flow-col gap-2 justify-start items-center place-self-start pr-3 py-2 text-sm font-medium text-center hover:text-red/90 rounded-lg focus:ring-2 focus:ring-orange focus:outline-none max-h-content"
+      >
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="w-6 h-6">
+          <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+          />
+        </svg>
+        Back
+      </button>
+
+      <div className="grid lg:grid-cols-2 gap-2 lg:px-8">
         <div className="grid gap-3 content-start">
+          <h1 className="text-4xl font-extrabold">{mic.name}</h1>
           <div>
             <p className="font-bold">{mic.venue.name}</p>
             <p>{mic.venue.street_address}</p>
