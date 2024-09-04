@@ -1,5 +1,7 @@
 "use client"
 
+import Error from "./error"
+import Loading from "./loading"
 import BoroughFilter from "@/components/BoroughFilter"
 import Card from "@/components/Card"
 import FilterSelector from "@/components/FilterSelector"
@@ -11,14 +13,11 @@ import { useQuery } from "react-query"
 
 const fetchMics = async () => {
   const response = await fetch("/api/mics")
-  if (!response.ok) {
-    throw new Error("Failed to fetch mic data")
-  }
   return response.json()
 }
 
 export default function Page() {
-  const { data: mics } = useQuery("mics", fetchMics)
+  const { data: mics, isLoading, isError } = useQuery("mics", fetchMics)
   const [filteredMics, setFilteredMics] = useState([])
   const [isOpen, setIsOpen] = useState<boolean>(false)
   const [filterOpen, setFilterOpen] = useState<string | null>(null)
@@ -65,6 +64,9 @@ export default function Page() {
 
     setFilteredMics(newMics)
   }, [weekdayFilters, boroughFilters, timeFilters, mics])
+
+  if (isLoading) return <Loading />
+  if (isError) return <Error />
 
   return (
     <main className="grid grid-rows-[auto_1fr] gap-3 h-full overflow-auto">
@@ -113,7 +115,7 @@ export default function Page() {
           filteredMics?.map((m) => <Card key={m.id} mic={m} />)
         ) : (
           <p className="col-span-full py-24 text-lg font-bold text-orange text-center">
-            No mics found. Try adjusting your filters.
+            No mics found. You should start one! <br /> Or try adjusting your filters.
           </p>
         )}
       </div>
