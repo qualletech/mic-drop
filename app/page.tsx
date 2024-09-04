@@ -108,7 +108,7 @@ export default function Page() {
           />
         </div>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 overflow-auto h-full px-12 py-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 overflow-auto h-fit px-12 py-6">
         {filteredMics?.length ? (
           filteredMics?.map((m) => <Card key={m.id} mic={m} />)
         ) : (
