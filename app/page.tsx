@@ -35,6 +35,12 @@ export default function Page() {
     setFilterOpen(filterName)
   }
 
+  const handleClearAll = () => {
+    setIsOpen(false)
+    setWeekdayFilters({})
+    setBoroughFilters({})
+    setTimeFilters({})
+  }
   useEffect(() => {
     if (mics?.length > 0) setFilteredMics(mics)
   }, [mics])
@@ -96,7 +102,7 @@ export default function Page() {
             </svg>
             <span className="hidden">Filter Mics</span>
           </button>
-          <FilterSelector isOpen={isOpen} handleClick={handleClick} />
+          <FilterSelector isOpen={isOpen} handleClick={handleClick} handleClearAll={handleClearAll} />
           <WeekdayFilter
             isWeekdayOpen={filterOpen === "weekday"}
             filters={weekdayFilters}
