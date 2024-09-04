@@ -7,6 +7,7 @@ export default function GoogleMapsEmbed({ address }: { address: string }) {
       width="100%"
       loading="lazy"
       referrerPolicy="no-referrer-when-downgrade"
+      className="rounded-lg"
     />
   )
 }
