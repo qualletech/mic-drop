@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+main {
+  scrollbar-gutter: stable;
+}
+
 ::-webkit-scrollbar {
   width: 0.8rem;
 }
