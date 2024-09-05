@@ -9,7 +9,7 @@ export default function FilterSelector({
 }) {
   return isOpen ? (
     <div className="grid mt-1 absolute top-full right-0 rounded-lg border-2 border-red  bg-white w-60">
-      <p className="border-b border-red px-2.5 py-1.5 text-red text-sm">Filter by:</p>
+      <p className="border-b border-red px-2.5 py-1.5 text-red text-sm">Filter</p>
 
       <button
         type="button"

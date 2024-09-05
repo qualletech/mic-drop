@@ -32,6 +32,11 @@ export default function Page() {
     setFilterOpen(null)
   }
 
+  const setIsFilterOpen = () => {
+    setIsOpen(true)
+    setFilterOpen(null)
+  }
+
   const handleClick = (filterName: string) => {
     setIsOpen(false)
     setFilterOpen(filterName)
@@ -133,14 +138,22 @@ export default function Page() {
             </svg>
             <span className="hidden">Filter Mics</span>
           </button>
+
           <FilterSelector isOpen={isOpen} handleClick={handleClick} handleClearAll={handleClearAll} />
           <WeekdayFilter
+            setFilterSelectorOpen={setIsFilterOpen}
             isWeekdayOpen={filterOpen === "weekday"}
             filters={weekdayFilters}
             setFilters={setWeekdayFilters}
           />
-          <TimeFilter isTimeOpen={filterOpen === "time"} filters={timeFilters} setFilters={setTimeFilters} />
+          <TimeFilter
+            setFilterSelectorOpen={setIsFilterOpen}
+            isTimeOpen={filterOpen === "time"}
+            filters={timeFilters}
+            setFilters={setTimeFilters}
+          />
           <BoroughFilter
+            setFilterSelectorOpen={setIsFilterOpen}
             isBoroughOpen={filterOpen === "borough"}
             filters={boroughFilters}
             setFilters={setBoroughFilters}
