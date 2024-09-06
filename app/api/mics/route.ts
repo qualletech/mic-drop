@@ -1,5 +1,7 @@
 /* eslint-disable import/prefer-default-export */
+import { MicGetRequest } from "./[mic_id]/route"
 import prismaClient from "@/prisma/prismaClient"
+import { NextResponse } from "next/server"
 
 const weekdayOrder = {
   monday: 0,
@@ -13,7 +15,7 @@ const weekdayOrder = {
 
 export async function GET() {
   try {
-    const mics = await prismaClient.mic.findMany({
+    const mics: MicGetRequest[] = await prismaClient.mic.findMany({
       include: { mic_times: true, venue: true },
     })
 
@@ -40,9 +42,9 @@ export async function GET() {
       return weekdayOrder[earliestA.weekday] - weekdayOrder[earliestB.weekday]
     })
 
-    return Response.json(mics)
+    return NextResponse.json(mics, { status: 200 })
   } catch (error) {
     console.error("Error fetching mic data:", error)
-    return Response.json({ status: 500, error: "Error fetching mic data" })
+    return NextResponse.json({ status: 500, error: "Error fetching mic data" })
   }
 }
