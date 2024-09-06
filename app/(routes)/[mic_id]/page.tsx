@@ -1,8 +1,8 @@
 "use client"
 
-import Error from "../error"
-import Loading from "../loading"
+import Error from "@/components/Error"
 import GoogleMapsEmbed from "@/components/GoogleMapsEmbed"
+import Loading from "@/components/Loading"
 import MicTimeRows from "@/components/MicTimeRows"
 import { useRouter } from "next/navigation"
 import { useQuery } from "react-query"

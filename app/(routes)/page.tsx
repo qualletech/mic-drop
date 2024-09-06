@@ -1,10 +1,10 @@
 "use client"
 
-import Error from "./error"
-import Loading from "./loading"
 import BoroughFilter from "@/components/BoroughFilter"
 import Card from "@/components/Card"
+import Error from "@/components/Error"
 import FilterSelector from "@/components/FilterSelector"
+import Loading from "@/components/Loading"
 import TimeFilter from "@/components/TimeFilter"
 import WeekdayFilter from "@/components/WeekdayFilter"
 import moment from "moment"
