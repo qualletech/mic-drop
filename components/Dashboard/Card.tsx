@@ -1,4 +1,4 @@
-import MicTimeRows from "./MicTimeRows"
+import MicTimeRows from "../MicTimeRows"
 
 export default function Card({ mic }) {
   return (
