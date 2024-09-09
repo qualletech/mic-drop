@@ -28,7 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <QueryClientProvider client={queryClient}>
-        <body className="bg-light h-dvh grid md:grid-rows-[auto_minmax(0,1fr)_auto]">
+        <body className="bg-light h-dvh grid grid-rows-[auto_minmax(0,1fr)_auto]">
           <Header />
           <main>{children}</main>
           <Footer />
