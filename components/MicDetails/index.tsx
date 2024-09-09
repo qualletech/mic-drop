@@ -24,6 +24,7 @@ export default function MicDetails({ mic }: { mic: MicType }) {
             {mic?.website && <WebsiteIcon link={mic.website} />}
             {mic?.instagram && <InstagramIcon instagramLink={mic.instagram} />}
           </div>
+          <p className="text-red font-semibold italic">Check the mic's instagram or website for changes or updates!</p>
         </div>
         <GoogleMapsEmbed address={`${mic.venue.name} ${mic.venue.zip_code}`} />
       </div>
