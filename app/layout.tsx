@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Qualle Tech" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta httpEquiv="Content-Security-Policy" content="default-src https:" />
+        {/* <meta httpEquiv="Content-Security-Policy" content="default-src https:" /> */}
         <meta httpEquiv="Referrer-Policy" content="same-origin" />
         <meta httpEquiv="X-Frame-Options" content="DENY" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
