@@ -12,6 +12,7 @@
   "author": "Qualle Tech",
   "license": "GPL-3.0-or-later",
   "dependencies": {
+    "@next/third-parties": "^14.2.9",
     "@prisma/client": "^5.13.0",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",

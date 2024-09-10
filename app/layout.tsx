@@ -3,6 +3,7 @@
 import "./globals.css"
 import Footer from "@/components/Footer"
 import Header from "@/components/Header"
+import { GoogleAnalytics } from "@next/third-parties/google"
 import { QueryClient, QueryClientProvider } from "react-query"
 
 const queryClient = new QueryClient()
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Header />
           <main>{children}</main>
           <Footer />
+          <GoogleAnalytics gaId="G-SYSQP1YNWJ" />
         </body>
       </QueryClientProvider>
     </html>
