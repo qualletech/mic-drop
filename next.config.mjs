@@ -22,14 +22,13 @@ const nextConfig = {
             value: `
               default-src 'self';
               script-src 'self' 'unsafe-inline' 'unsafe-eval' https://maps.googleapis.com;
+              img-src 'self' data: blob:;
               style-src 'self' 'unsafe-inline';
-              frame-src https://maps.google.com https://www.google.com;
               font-src 'self';
-              img-src 'self' data: https://maps.googleapis.com https://maps.gstatic.com;
+              object-src 'none';
               form-action 'self';
               base-uri 'self';
-              object-src 'none';
-            `,
+            `.replace(/\n/g, ""),
           },
         ],
       },
