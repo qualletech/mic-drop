@@ -25,7 +25,6 @@ const nextConfig = {
               style-src 'self' 'unsafe-inline';
               frame-src https://maps.google.com https://www.google.com;
               font-src 'self';
-              connect-src 'self' ${process.env.DATABASE_URL};
               img-src 'self' data: https://maps.googleapis.com https://maps.gstatic.com;
               form-action 'self';
               base-uri 'self';
