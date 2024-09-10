@@ -1,6 +1,7 @@
 "use client"
 
 import NewMicForm from "@/components/NewMicForm"
+import Heading1 from "@/components/StylingComponents/Heading1"
 import { useState } from "react"
 
 export default function Page() {
@@ -8,15 +9,13 @@ export default function Page() {
   const [requestDetails, setRequestDetails] = useState(null)
   const [loading, setLoading] = useState(false)
 
+  const generalAndEditValidation = requestDetails?.message
+  const newMicValidation = requestDetails?.micName && requestDetails?.venue && requestDetails?.micTime
+  const buttonDisabled = requestType === "new_submission" ? !newMicValidation : !generalAndEditValidation
+
   const handleFormUpdate = (key, value) => {
     setRequestDetails((prevDetails) => ({ ...prevDetails, [key]: value }))
   }
-
-  const generalAndEditValidation = requestDetails?.message
-
-  const newMicValidation = requestDetails?.micName && requestDetails?.venue && requestDetails?.micTime
-
-  const buttonDisabled = requestType === "new_submission" ? !newMicValidation : !generalAndEditValidation
 
   const onFormSubmit = async (event) => {
     if (buttonDisabled) return
@@ -42,9 +41,9 @@ export default function Page() {
   }
 
   return (
-    <div className="grid md:grid-cols-[1fr_auto] max-h-full overflow-auto px-12 py-6">
+    <div className="grid md:grid-cols-[1fr_auto] max-h-full overflow-auto px-6 py-3 md:px-12 md:py-6">
       <div className="grid content-start gap-5">
-        <h1 className="text-4xl font-extrabold">Contact Us</h1>
+        <Heading1 text="Suggestion Box" />
         <form className="grid gap-2">
           <label htmlFor="request-type" className="block mb-2 text-sm font-medium">
             Request Type
@@ -121,7 +120,7 @@ export default function Page() {
           </div>
         </form>
       </div>
-      <img className="aspect-auto w-3/4 py-16 justify-self-center md:block hidden" src="./mic-pic.png" alt="" />
+      <img className="aspect-auto w-3/4 pt-8 justify-self-end md:block hidden" src="./contact-icon.png" alt="" />
     </div>
   )
 }

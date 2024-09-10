@@ -1,7 +1,15 @@
-export default function FilterSelector({ isOpen, handleClick }: { isOpen: boolean; handleClick: (string) => void }) {
+export default function FilterSelector({
+  isOpen,
+  handleClick,
+  handleClearAll,
+}: {
+  isOpen: boolean
+  handleClick: (string) => void
+  handleClearAll: () => void
+}) {
   return isOpen ? (
     <div className="grid mt-1 absolute top-full right-0 rounded-lg border-2 border-red  bg-white w-60">
-      <p className="border-b border-red px-2.5 py-1.5 text-red text-sm">Filter by:</p>
+      <p className="border-b border-red px-2.5 py-1.5 text-red text-sm">Filter</p>
 
       <button
         type="button"
@@ -23,6 +31,13 @@ export default function FilterSelector({ isOpen, handleClick }: { isOpen: boolea
         onClick={() => handleClick("borough")}
       >
         Borough
+      </button>
+      <button
+        type="button"
+        className="border-t border-red border-b border-red px-2.5 py-1.5 text-sm hover:bg-light/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-orange text-start"
+        onClick={handleClearAll}
+      >
+        Clear All
       </button>
     </div>
   ) : null

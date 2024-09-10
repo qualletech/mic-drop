@@ -1,8 +1,13 @@
+import ClearSelectionButton from "../ClearSelectionButton"
+import BackButton from "./BackButton"
+
 export default function TimeFilter({
+  setFilterSelectorOpen,
   isTimeOpen,
   filters,
   setFilters,
 }: {
+  setFilterSelectorOpen: () => void
   isTimeOpen: boolean
   filters: any
   setFilters: any
@@ -16,8 +21,8 @@ export default function TimeFilter({
   }
 
   return isTimeOpen ? (
-    <div className="grid mt-1 absolute top-full right-0 rounded-lg border-2 border-red  bg-white w-60">
-      <p className="border-b border-red px-2.5 py-1.5 text-red text-sm">Time is:</p>
+    <div className="grid mt-1 absolute top-full right-0 rounded-lg border-2 border-red  bg-white w-max md:w-60">
+      <BackButton label="Time" setFilterSelectorOpen={setFilterSelectorOpen} />
       <ul className="w-full text-sm">
         <li className="w-full">
           <label htmlFor="time" className="grid grid-cols-2 gap-2 items-center w-full p-2.5 text-sm">
@@ -42,13 +47,7 @@ export default function TimeFilter({
           </label>
         </li>
       </ul>
-      <button
-        type="button"
-        className="border-t border-red border-b border-red px-2.5 py-1.5 text-sm hover:bg-light/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-orange text-start"
-        onClick={clearButtonClick}
-      >
-        Clear
-      </button>
+      <ClearSelectionButton clearButtonClick={clearButtonClick} />
     </div>
   ) : null
 }

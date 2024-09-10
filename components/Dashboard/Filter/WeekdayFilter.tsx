@@ -1,8 +1,13 @@
+import ClearSelectionButton from "../ClearSelectionButton"
+import BackButton from "./BackButton"
+
 export default function WeekdayFilter({
+  setFilterSelectorOpen,
   isWeekdayOpen,
   filters,
   setFilters,
 }: {
+  setFilterSelectorOpen: () => void
   isWeekdayOpen: boolean
   filters: any
   setFilters: any
@@ -23,7 +28,8 @@ export default function WeekdayFilter({
 
   return isWeekdayOpen ? (
     <div className="grid mt-1 absolute top-full right-0 rounded-lg border-2 border-red  bg-white w-60">
-      <p className="border-b border-red px-2.5 py-1.5 text-red text-sm">Weekday is:</p>
+      <BackButton label="Weekday" setFilterSelectorOpen={setFilterSelectorOpen} />
+
       <ul className="w-48 text-sm">
         <li className="w-full">
           <label htmlFor="vue-checkbox" className="grid grid-cols-[auto_1fr] gap-2 items-center w-full p-2.5 text-sm">
@@ -103,13 +109,7 @@ export default function WeekdayFilter({
           </label>
         </li>
       </ul>
-      <button
-        type="button"
-        className="border-t border-red border-b border-red px-2.5 py-1.5 text-sm hover:bg-light/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-orange text-start"
-        onClick={clearButtonClick}
-      >
-        Clear Selection
-      </button>
+      <ClearSelectionButton clearButtonClick={clearButtonClick} />
     </div>
   ) : null
 }

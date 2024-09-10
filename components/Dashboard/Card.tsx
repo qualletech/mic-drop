@@ -1,4 +1,4 @@
-import MicTimeRows from "./MicTimeRows"
+import MicTimeRows from "../MicTimeRows"
 
 export default function Card({ mic }) {
   return (
@@ -18,8 +18,8 @@ export default function Card({ mic }) {
         href={`${mic.id}`}
         className="grid grid-flow-col justify-start items-center place-self-start px-3 py-2 text-sm font-medium text-center text-light bg-red rounded-lg hover:bg-red/80 focus:ring-2 focus:ring-orange focus:outline-none max-h-content"
       >
-        <p className="flex-shrink-0">
-          Learn more <span className="hidden"> about {mic.name}</span>
+        <p>
+          More Info <span className="hidden"> about {mic.name}</span>
         </p>
         <svg
           className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
