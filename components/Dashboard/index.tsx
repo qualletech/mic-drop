@@ -3,11 +3,13 @@
 import Heading1 from "../StylingComponents/Heading1"
 import Card from "./Card"
 import Filter from "./Filter"
+import Search from "./Search"
 import { MicType } from "./types"
 import moment from "moment"
 import { useEffect, useState } from "react"
 
 export default function Dashboard({ mics }: { mics: MicType[] }) {
+  const [searchValue, setSearchValue] = useState("")
   const [filteredMics, setFilteredMics] = useState([])
   const [weekdayFilters, setWeekdayFilters] = useState<{ [weekday: string]: boolean }>({})
   const [boroughFilters, setBoroughFilters] = useState<{ [borough: string]: boolean }>({})
@@ -39,21 +41,30 @@ export default function Dashboard({ mics }: { mics: MicType[] }) {
       newMics = newMics.filter((mic) => boroughFilters[mic.venue.borough])
     }
 
+    if (searchValue.length > 0) {
+      newMics = newMics.filter(
+        (mic) => mic.name.toLowerCase().includes(searchValue) || mic.venue.name.toLowerCase().includes(searchValue),
+      )
+    }
+
     setFilteredMics(newMics)
-  }, [weekdayFilters, boroughFilters, timeFilters, mics])
+  }, [weekdayFilters, boroughFilters, timeFilters, mics, searchValue])
 
   return (
     <main className="grid grid-rows-[auto_1fr] gap-3 h-full overflow-auto">
-      <div className="grid grid-cols-[1fr_auto] gap-3 items-center px-4 pt-4 md:px-12 md:pt-6">
+      <div className="grid md:grid-cols-[1fr_auto] gap-3 items-center px-4 pt-4 md:px-12 md:pt-6">
         <Heading1 text="NYC Open Mics" />
-        <Filter
-          weekdayFilters={weekdayFilters}
-          setWeekdayFilters={setWeekdayFilters}
-          boroughFilters={boroughFilters}
-          setBoroughFilters={setBoroughFilters}
-          timeFilters={timeFilters}
-          setTimeFilters={setTimeFilters}
-        />
+        <div className="grid grid-cols-[auto_1fr] gap-3 items-center justify-items-end">
+          <Search searchValue={searchValue} setSearchValue={setSearchValue} />
+          <Filter
+            weekdayFilters={weekdayFilters}
+            setWeekdayFilters={setWeekdayFilters}
+            boroughFilters={boroughFilters}
+            setBoroughFilters={setBoroughFilters}
+            timeFilters={timeFilters}
+            setTimeFilters={setTimeFilters}
+          />
+        </div>
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 overflow-auto h-fit px-6 py-3 md:px-12 md:py-6">
         {filteredMics?.length ? (
