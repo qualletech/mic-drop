@@ -3,6 +3,8 @@
 import Heading1 from "../StylingComponents/Heading1"
 import Card from "./Card"
 import Filter from "./Filter"
+import Search from "./Search"
+import SearchButton from "./Search/SearchButton"
 import { MicType } from "./types"
 import moment from "moment"
 import { useEffect, useState } from "react"
@@ -46,14 +48,17 @@ export default function Dashboard({ mics }: { mics: MicType[] }) {
     <main className="grid grid-rows-[auto_1fr] gap-3 h-full overflow-auto">
       <div className="grid grid-cols-[1fr_auto] gap-3 items-center px-4 pt-4 md:px-12 md:pt-6">
         <Heading1 text="NYC Open Mics" />
-        <Filter
-          weekdayFilters={weekdayFilters}
-          setWeekdayFilters={setWeekdayFilters}
-          boroughFilters={boroughFilters}
-          setBoroughFilters={setBoroughFilters}
-          timeFilters={timeFilters}
-          setTimeFilters={setTimeFilters}
-        />
+        <div className="grid grid-cols-2 gap-3 items-center">
+          <Search />
+          <Filter
+            weekdayFilters={weekdayFilters}
+            setWeekdayFilters={setWeekdayFilters}
+            boroughFilters={boroughFilters}
+            setBoroughFilters={setBoroughFilters}
+            timeFilters={timeFilters}
+            setTimeFilters={setTimeFilters}
+          />
+        </div>
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 overflow-auto h-fit px-6 py-3 md:px-12 md:py-6">
         {filteredMics?.length ? (
