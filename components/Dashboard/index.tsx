@@ -42,7 +42,9 @@ export default function Dashboard({ mics }: { mics: MicType[] }) {
     }
 
     if (searchValue.length > 0) {
-      newMics = newMics.filter((mic) => mic.name.toLowerCase().includes(searchValue))
+      newMics = newMics.filter(
+        (mic) => mic.name.toLowerCase().includes(searchValue) || mic.venue.name.toLowerCase().includes(searchValue),
+      )
     }
 
     setFilteredMics(newMics)
