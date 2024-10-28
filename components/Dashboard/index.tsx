@@ -50,9 +50,9 @@ export default function Dashboard({ mics }: { mics: MicType[] }) {
 
   return (
     <main className="grid grid-rows-[auto_1fr] gap-3 h-full overflow-auto">
-      <div className="grid grid-cols-[1fr_auto] gap-3 items-center px-4 pt-4 md:px-12 md:pt-6">
+      <div className="grid md:grid-cols-[1fr_auto] gap-3 items-center px-4 pt-4 md:px-12 md:pt-6">
         <Heading1 text="NYC Open Mics" />
-        <div className="grid grid-cols-2 gap-3 items-center">
+        <div className="grid grid-cols-[auto_1fr] gap-3 items-center justify-items-end">
           <Search searchValue={searchValue} setSearchValue={setSearchValue} />
           <Filter
             weekdayFilters={weekdayFilters}
